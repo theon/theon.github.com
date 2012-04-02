@@ -15,9 +15,7 @@ PAGE_DIR='pages'
 #PATH = ''
 THEME = 'notiansidea'
 
-#Just-Read
-
-OUTPUT_PATH = 'output'
+OUTPUT_PATH = '/work/theon.github.com'
 
 MARKUP = 'md'
 #MD_EXTENSIONS = 'extra'
