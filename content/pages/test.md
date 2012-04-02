@@ -1,4 +1,4 @@
-Title: Todo
+Title: Test
 
 This is where I am noting down tech I've played with that I want to blog about and tech I haven't tried yet, but want to.
 
