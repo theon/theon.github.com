@@ -6,7 +6,7 @@ Author: Ian Forsey
 
 Amazon EC2 is pretty awesome. In under a minute you can fire up a server in the cloud and SSH in. The SSH access combined with the fact you can run your choice of OS, makes it much more flexible than other cloud platforms as a service, such as Heroku, Google App Engine and Cloud Foundry. The down side is that there is a lot more configuration to do, so it is probably going to take a little longer to deploy your app, than it would with Heroku.
 
-I've used EC2 at work and have used it to deploy some small projects into production. Along the way I've compiled this list of lessons I've learnt the hard way.
+I've used EC2 to deploy some small projects into production and along the way I've compiled this list of lessons I've learnt the hard way.
 
 # Enable Termination Protection
 
