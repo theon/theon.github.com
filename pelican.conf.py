@@ -1,5 +1,6 @@
 AUTHOR = 'Ian Forsey'
 SITENAME = "Just Some <em>Dev</em>"
+SITETITLE = "Just Some Dev - Blogging about programming"
 #SITEURL = ''
 #TIMEZONE = ""
 
