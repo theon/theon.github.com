@@ -25,7 +25,7 @@ body {
     text-align: left;
 }
 
-
+#google-author {display:none;}
 
 /* Headings */
 h1 {font-size: 2em }
