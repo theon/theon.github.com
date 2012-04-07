@@ -4,7 +4,7 @@ Tags: Scala
 Category: Posts
 Author: Ian Forsey
 
-Scala is a really nice programming language to work with and is easy for devs coming from the Java world to pick up, due to the fact it runs on the JVM. I thought I'd share the five reasons I use Scala.
+Scala is a really nice programming language to work with and is easy for devs coming from the Java world (like me) to pick up, due to the fact it runs on the JVM. I thought I'd share the five main reasons I've been using Scala for many of my projects at the moment.
 
 # 1. Case classes
 
