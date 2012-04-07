@@ -4,7 +4,7 @@ Tags: chromebook, chrome os
 Category: Posts
 Author: Ian Forsey
 
-I was lucky enough to get given a Chromebook by Google whilst attending Google IO 2011 last year and I must admit - I really like it. At first I thought I would get annoyed, not being able to install local programs (other than Chrome and the shell it comes with) - however it seems 99% of what I do at home only needs a browser and a shell as that seems to be how much time I spend on my Chromebook compared my desktop these days.
+I was lucky enough to get given a Chromebook whilst attending Google IO 2011 last year and I must admit - I really like it. At first I thought I would get annoyed, not being able to install local programs (other than Chrome and the shell it comes with) - however it seems 99% of what I do at home only needs a browser and a shell as that seems to be how much time I spend on my Chromebook compared my desktop these days.
 
 The other day I turned on the Chromebook to find the terminal no longer worked. The usual Ctrl+Alt+T keyboard shortcut yielded no results. I know this problem didn't just effect me, because it also happened to my work colleague's Chromebook. Despite this my first port of call (a quick google), resulted in nothing useful, so I thought I'd try a reinstall of Chrome OS.
 
