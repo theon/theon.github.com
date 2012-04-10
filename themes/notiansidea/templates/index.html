@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 {% block content_title %}{% endblock %}
+{#
 {% block description %}
     {% if articles %}
         {{ articles_page.object_list[0].summary }}
     {% endif %}
 {% endblock %}
+#}
 {% block content %}
     {% if articles %}
         {% for article in articles_page.object_list %}        
