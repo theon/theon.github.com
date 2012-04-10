@@ -253,6 +253,8 @@ letter-spacing: 0;
 #featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
 #featured h3 a:hover, #featured h3 a:active {color: #fff;}
 
+article img {display: block; margin: 0 auto;}
+
 /*
 	Body
 *****************/
