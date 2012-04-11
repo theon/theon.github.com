@@ -40,3 +40,16 @@ DISPLAY_CATS_ON_MENU = False
 MENUITEMS = (('Home', '/'),
 #	         ('Todo', '/pages/todo.html'),
              ('About', '/pages/about.html'))
+
+SOURCE_GIT_REPO="/work/blog"
+SOURCE_GIT_REMOTE="origin"
+SOURCE_GIT_BRANCH="master"
+
+DEPLOY_GIT_REPO="/work/theon.github.com"
+DEPLOY_GIT_REMOTE="origin"
+DEPLOY_GIT_BRANCH="master"
+
+GIT_WHITELISTED_FILES = [
+    "README.md",
+    "googled50a97559ea3af0e.html"
+]
