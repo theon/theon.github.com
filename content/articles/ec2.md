@@ -1,5 +1,5 @@
 Date: 2012-04-01
-Title: Things I learnt about using Amazon EC2
+Title: Amazon EC2 Gotchas
 Tags: amazon ec2, cloudkick
 Category: Posts
 Author: Ian Forsey
