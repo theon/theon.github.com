@@ -41,15 +41,17 @@ MENUITEMS = (('Home', '/'),
 #	         ('Todo', '/pages/todo.html'),
              ('About', '/pages/about.html'))
 
-SOURCE_GIT_REPO="/work/blog"
-SOURCE_GIT_REMOTE="origin"
-SOURCE_GIT_BRANCH="master"
+PELICANGIT_PORT=8080
 
-DEPLOY_GIT_REPO="/work/theon.github.com"
-DEPLOY_GIT_REMOTE="origin"
-DEPLOY_GIT_BRANCH="master"
+PELICANGIT_SOURCE_REPO="/work/blog"
+PELICANGIT_SOURCE_REMOTE="origin"
+PELICANGIT_SOURCE_BRANCH="master"
 
-GIT_WHITELISTED_FILES = [
+PELICANGIT_DEPLOY_REPO="/work/theon.github.com"
+PELICANGIT_DEPLOY_REMOTE="origin"
+PELICANGIT_DEPLOY_BRANCH="master"
+
+PELICANGIT_WHITELISTED_FILES = [
     "README.md",
     "googled50a97559ea3af0e.html"
 ]
