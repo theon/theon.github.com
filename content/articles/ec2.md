@@ -1,6 +1,6 @@
 Date: 2012-04-01
 Title: Things I learnt about using Amazon EC2
-Tags: Amazon, EC2, Cloudkick
+Tags: amazon ec2, cloudkick
 Category: Posts
 Author: Ian Forsey
 
