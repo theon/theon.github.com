@@ -15,9 +15,10 @@ TAG_CLOUD_STEPS = 8
 ARTICLE_DIR='articles'
 PAGE_DIR='pages'
 
-#PATH = ''
+
 THEME = 'notiansidea'
 
+PATH = '/work/blog/content'
 OUTPUT_PATH = '/work/theon.github.com'
 
 MARKUP = 'md'
