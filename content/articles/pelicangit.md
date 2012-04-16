@@ -14,6 +14,6 @@ Here is a diagram showing the pelican set up behind this blog:
 
 I write my posts in markdown and push them to a github repo. A git service hook then causes a pelican instance running in Amazon EC2 to convert this markdown to HTML and push it to a [github pages](http://pages.github.com/) repo for hosting. It's worth noting that github pages and Cloud9 IDE are completely free at the time of writing. EC2 have a year long free tier before charging.  
 
-The wrapper around pelican that responds to the git service hook and manages the git repos is a python script I've unimaginatively called [pelicangit](https://github.com/theon/pelican-git) - feel free to fork it, play with it and/or provide feedback/criticism. 
+The wrapper around pelican that responds to the git service hook and manages the git repos is a python script I've unimaginatively called [pelicangit](https://github.com/theon/pelicangit) - feel free to fork it, play with it and/or provide feedback/criticism. 
 
 So far, this set up has been nice to work with. I really like the simplicity of writing a blog post as a markdown file with a few headers and then pushing it to a git repo to publish it. Plus, the best thing about pushing pelican into the cloud is that I can write my blog posts from my Chromebook, which can't run pelican locally :)
