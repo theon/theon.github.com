@@ -1,6 +1,6 @@
 Date: 2012-04-01
 Title: Five Reasons Scala is Awesome
-Tags: Scala
+Tags: scala
 Category: Posts
 Author: Ian Forsey
 
