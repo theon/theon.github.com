@@ -1,0 +1,15 @@
+Date: 2012-04-17
+Title: pelicangit 0.1 released 
+Tags: pelican, git, github, pelicangit
+Category: Posts
+Author: Ian Forsey
+
+In my [previous post](powering-your-blog-with-pelican-and-git.html) I talked about my motivation for creating [pelicangit](https://github.com/theon/pelicangit). I've spent this last week polishing it up a bit and have now made v0.1 available on PyPI.
+
+If you already have pelican and pip installed on your machine, installing pelicangit is now as easy as running `sudo pip install pelicangit`.
+
+For more details on configuring check out the documentation on [github page](https://github.com/theon/pelicangit) or the [PyPI page](http://pypi.python.org/pypi?:action=display&name=pelicangit&version=0.1)
+
+PS. This is probably my first time pubically distributing a command line tool and I was really impressed at the awesomeness of how easy the [python docs](http://docs.python.org/distutils/index.html) made it. Essentially you write a simple setup.py configuration file detailing things such as which python scripts you want to be console commands (copied to /usr/local/bin) and then run a singe command and that's it: Your distribution is made, uploaded to PyPi and made available for the general public to use. I wish getting Java Libaries into the public maven repository was that easy! 
+
+This will likely make Python my go-to language if I want to make any other command line tools in the future.
