@@ -3,6 +3,6 @@ Title: My Beef with Dynamically Typed Languages
 Tags: dynamically typed
 Category: Posts
 Author: Ian Forsey
-Draft: true
+Status: draft
 
 Test
