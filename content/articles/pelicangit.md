@@ -1,6 +1,6 @@
 Date: 2012-04-10
 Title: Powering your Blog with Pelican and Git
-Tags: pelican, git, github, amazon ec2, cloud9 ide 
+Tags: pelicangit, pelican, git, github, amazon ec2, cloud9 ide 
 Category: Posts
 Author: Ian Forsey
 
