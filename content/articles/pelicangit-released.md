@@ -4,7 +4,7 @@ Tags: pelican, git, github, pelicangit
 Category: Posts
 Author: Ian Forsey
 
-In my [previous post](powering-your-blog-with-pelican-and-git.html) I talked about my motivation for creating [pelicangit](https://github.com/theon/pelicangit). I've spent this last week polishing it up a bit and have now made v0.1 available on PyPI. If you already have pelican and pip installed on your machine, installing pelicangit is now as easy as running `sudo pip install pelicangit`.
+In my [previous post](/powering-your-blog-with-pelican-and-git.html) I talked about my motivation for creating [pelicangit](https://github.com/theon/pelicangit). I've spent this last week polishing it up a bit and have now made v0.1 available on PyPI. If you already have pelican and pip installed on your machine, installing pelicangit is now as easy as running `sudo pip install pelicangit`.
 
 For more details on configuring check out the documentation on [github page](https://github.com/theon/pelicangit) or the [PyPI page](http://pypi.python.org/pypi?:action=display&name=pelicangit&version=0.1)
 

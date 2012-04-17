@@ -1,6 +1,6 @@
 Date: 2012-04-19
 Title: What's the Deal with Dynamically Typed Languages? 
-Tags: dynamically typed, statically typed
+Tags: dynamically typed, statically typed, scala
 Category: Posts
 Author: Ian Forsey
 Status: draft
