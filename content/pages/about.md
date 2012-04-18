@@ -2,7 +2,7 @@ Title: About
 
 # About Me
 
-I'm a developer with a background in Java. These days I work in a Labs team as an all-purpose server-side developer which is pretty awesome because I get to play around with lots of different tech every day, rather than always programming the in the same language.  
+I'm a developer with a background in Java. These days I work in a Labs team at [Net-A-Porter](http://www.net-a-porter.com) as an all-purpose server-side developer which is pretty awesome because I get to play around with lots of different tech every day.  
 
 # About this blog
 
