@@ -20,7 +20,7 @@ Scala strikes a nice balance in this regard. Declaring varibles is concise as yo
 
     val animal = "Cat"
     
-Despite the lack of a type, Scala is a statically typed language. Functions _must_ declare their argument and return types and this is why is the type declaration is optional for variables - no matter what you are assigning to your variable Scala can infer the variable type (note: if you are only declaring a variable and not assigning anything to it, you must specify the type).
+Despite the lack of a type, Scala is a statically typed language. Functions _must_ declare their argument and return types and this is why is the type declaration is optional for variables - no matter what you are assigning to your variable, Scala can infer the variable type (note: if you are only declaring a variable and not assigning anything to it, you must specify the type).
 
 Scala is succinct is many other ways, which leads be to....
 
