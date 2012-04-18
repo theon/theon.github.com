@@ -1,14 +1,32 @@
 Date: 2012-04-01
-Title: Five Reasons Scala is Awesome
+Title: Six Reasons Scala is Awesome
 Tags: scala
 Category: Posts
 Author: Ian Forsey
 
-Scala is a really nice programming language to work with and is easy for devs coming from the Java world (like me) to pick up, due to the fact it runs on the JVM. I thought I'd share the five main reasons I've been using Scala for many of my projects at the moment.
+Scala is a really nice programming language to work with and is easy for devs coming from the Java world (like me) to pick up, due to the fact it runs on the JVM. I thought I'd share the six main reasons I've been using Scala for many of my projects at the moment.
 
-# 1. Case classes
+# 1. Scala feels like a dynamically typed language, but without the suck
 
-Case classes are the Scala equivalent of Java POJOs - objects you use to hold state and often don't do a whole lot else. Here is a case class in Scala:
+Generally speaking, I'm not a fan of dynamically typed languages. They definitely have their pros, but the vast majority of the time I miss the nice things you get with static typed langauges:
+
+ * When using a library I know what to pass into functions. I don't have to play the guessing game (or wade through library code that should be encapsulated from me) if documentation is poor.
+ * Intelligent code completion.
+ * Compile time type checking.
+
+One thing I love about dynamically typed languages is that you can knock things up really quick. With statically typed languages you can feel like you are getting bogged down in the with the vebose syntax - you have to specify types everywhere.
+
+Scala strikes a nice balance in this regard. Declaring varibles is succinct as you need not declare the type:
+
+    val animal = "Cat"
+    
+Despite this, Scala is a statically typed language. Functions _must_ declare their argument and return types and this is why is the type declaration is optional for variables - no matter what you are assigning to your variable Scala can infer the variable type (note: if you are only declaring a variable and not assigning anything to it, you must specify the type).
+
+Scala is succinct is many other ways, which leads be to....
+
+# 2. Case classes
+
+Case classes are the Scala equivalent of Java POJOs - objects you use to hold state and often don't do a whole lot else. The difference is that Scala case classes don't have all the bolierplate cruft of Java POJOs. Here is a case class in Scala:
 
     case class Animal(type:String, sound:String)
 
@@ -34,7 +52,7 @@ Pattern matching is a nice language feature in Scala. It allows you to use insta
         case Reptile(_, _) =>  println("This is a animal of subtype Reptile")
     }
 
-# 2. Named and Default Arguments
+# 3. Named and Default Arguments
 
 For constructor and method arguments you can specify defaults:
 
@@ -53,7 +71,7 @@ This comes in useful when you have many default arguments and need to highlight 
     > val tiger = cat.copy(sound="Roar!")
     tiger: Animal = Animal(Cat,Roar!)
 
-# 3. Awesome Collections Framework
+# 4. Awesome Collections Framework
 
 You can do some really nice things with the core collections framework. It's like the Guava, the Java library, but with nicer syntax. There is too much goodness to show here, but here are a few things you can do:
 
@@ -80,11 +98,11 @@ You can do some really nice things with the core collections framework. It's lik
     > res2.groupBy(_.length())
     res4: Map[Int,String] = Map((3 -> List(Cat,Dog))(5 -> List(Mouse)))
 
-# 4. Integration with Java Libraries
+# 5. Integration with Java Libraries
 
 Java and Scala code can be used together. You can call Java code from within Scala and vice versa. This is great, because you can still use all the great Java libraries you know and love. It also means you can start writing Scala code in exisitng Java systems - you don't have to go big bang and port everything to Scala to gain it's benefits at once.
 
-# 5. Scala Console
+# 6. Scala Console
 
 Type `scala` in your terminal and you get the Scala console. This is a great sandbox for testing stuff and makes it real easy to start playing. It's this same reason that made me fall in love with bash. 
 
