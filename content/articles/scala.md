@@ -8,19 +8,19 @@ Scala is a really nice programming language to work with and is easy for devs co
 
 # 1. Scala feels like a dynamically typed language, but without the suck
 
-Generally speaking, I'm not a fan of dynamically typed languages. They definitely have their pros, but the vast majority of the time I miss the nice things you get with static typed langauges:
+That's a bit harsh - I enjoy using dynamically typed languages, but generally speaking I tend to lean towards statically typed langauges because:
 
  * When using a library I know what to pass into functions. I don't have to play the guessing game (or wade through library code that should be encapsulated from me) if documentation is poor.
  * Intelligent code completion.
  * Compile time type checking.
 
-One thing I love about dynamically typed languages is that you can knock things up really quick. With statically typed languages you can feel like you are getting bogged down in the with the vebose syntax - you have to specify types everywhere.
+I know there are counter benefits to using dynamically typed languages and one of the things I love about dynamically typed languages is that they are generally much more succinct and allow knock things up really quick. With statically typed languages you can feel like you are getting bogged down in the with the vebose syntax - you have to specify types everywhere!
 
-Scala strikes a nice balance in this regard. Declaring varibles is succinct as you need not declare the type:
+Scala strikes a nice balance in this regard. Declaring varibles is concise as you need not declare the type:
 
     val animal = "Cat"
     
-Despite this, Scala is a statically typed language. Functions _must_ declare their argument and return types and this is why is the type declaration is optional for variables - no matter what you are assigning to your variable Scala can infer the variable type (note: if you are only declaring a variable and not assigning anything to it, you must specify the type).
+Despite the lack of a type, Scala is a statically typed language. Functions _must_ declare their argument and return types and this is why is the type declaration is optional for variables - no matter what you are assigning to your variable Scala can infer the variable type (note: if you are only declaring a variable and not assigning anything to it, you must specify the type).
 
 Scala is succinct is many other ways, which leads be to....
 
