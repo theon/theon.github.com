@@ -14,7 +14,7 @@ That's a bit harsh - I enjoy using dynamically typed languages, but generally sp
  * Intelligent code completion.
  * Compile time type checking.
 
-I know there are counter benefits to using dynamically typed languages and one of the things I love about dynamically typed languages is that they are generally much more succinct and allow you knock things up in a fraction of the time of statically typed languages where you can feel like you are getting bogged down in the with the vebose syntax - you have to specify types everywhere!
+I know there are counter benefits to using dynamically typed languages and one of the things I love about dynamically typed languages is that they are generally much more succinct and allow you knock things up in a fraction of the time of statically typed languages where you can feel like you are getting bogged down with the vebose syntax - you have to specify types everywhere!
 
 Scala strikes a nice balance in this regard. Declaring varibles is concise as you need not declare the type:
 
