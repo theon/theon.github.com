@@ -10,11 +10,11 @@ Scala is a really nice programming language to work with and is easy for devs co
 
 That's a bit harsh - I enjoy using dynamically typed languages, but generally speaking I tend to lean towards statically typed langauges because:
 
- * When using a library I know what to pass into functions. I don't have to play the guessing game (or wade through library code that should be encapsulated from me) if documentation is poor.
+ * When using a library, I know what to pass into functions. I don't have to play the guessing game (or wade through library code that really should be encapsulated away from me) when documentation is poor.
  * Intelligent code completion.
  * Compile time type checking.
 
-I know there are counter benefits to using dynamically typed languages and one of the things I love about dynamically typed languages is that they are generally much more succinct and allow knock things up really quick. With statically typed languages you can feel like you are getting bogged down in the with the vebose syntax - you have to specify types everywhere!
+I know there are counter benefits to using dynamically typed languages and one of the things I love about dynamically typed languages is that they are generally much more succinct and allow you knock things up in a fraction of the time of statically typed languages where you can feel like you are getting bogged down in the with the vebose syntax - you have to specify types everywhere!
 
 Scala strikes a nice balance in this regard. Declaring varibles is concise as you need not declare the type:
 
