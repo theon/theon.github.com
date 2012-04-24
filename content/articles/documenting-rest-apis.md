@@ -21,4 +21,4 @@ The output looks pretty similar to the actual returned payloads, except with typ
 
 Here is [the fork](https://github.com/theon/iodocs), a [example api documentation JSON file](https://github.com/theon/iodocs/blob/master/public/data/zoo.json) and a screenshot of the output:
 
-![iodocs with JSON schema](https://picasaweb.google.com/lh/photo/JgYEGd3a3ZCJzXB4NHbQkdMTjNZETYmyPJy0liipFm0?feat=directlink)
+![iodocs with JSON schema](https://lh6.googleusercontent.com/-w7n5eVl4rrc/T5cZiGLimeI/AAAAAAAACb0/euv371Xsy-w/s687/iodocs-json-schema.png)
