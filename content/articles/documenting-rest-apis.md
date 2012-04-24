@@ -3,7 +3,6 @@ Title: Documenting the Json Schema of your Rest APIs
 Tags: rest, api, iodocs, mashery, nodejs 
 Category: Posts
 Author: Ian Forsey
-Status: Draft
 
 Recently at work I have been looking at how to document our Restful APIs. After a chat with a couple of developers we had defined the following requirements we wanted from our restful API documentation:
  
