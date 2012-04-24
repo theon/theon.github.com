@@ -1,5 +1,5 @@
 Date: 2012-04-24
-Title: Documenting the Json Schema of your Rest APIs with iodocs 
+Title: Documenting the Json Schema of your Rest APIs 
 Tags: rest, api, iodocs, mashery, nodejs 
 Category: Posts
 Author: Ian Forsey
