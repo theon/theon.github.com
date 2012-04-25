@@ -11,7 +11,7 @@ Recently at work I have been looking at how to document our Restful APIs. After 
  * A tool embedded in the docs that allowed the reader to call the live deployed API would be a plus.
  * Being able to define the schema of JSON objects returned by the APIs was a must have.
 
-The last point regarding the JSON schema is important for us because we want to make sure our APIs are consistent by resusing JSON schema as much as possible. For example; if two APIs return say, product information, both APIs should be using the same field names for the product objects in the returned payloads and the documentation should make this re-use easy to spot for both server-side developers who are building the APIs and the and client-side developers consuming them. 
+The last point regarding the JSON schema is important for us because we want to make sure our APIs are consistent by resusing JSON schema as much as possible. For example; if two APIs return say, product information, then both APIs should be using the same field names for the product objects in the returned payloads and the documentation should make this re-use easy to spot for both server-side developers who are building the APIs and the and client-side developers consuming them. 
 
 I wasn't able to find any API documentation tools that supported the ability to define JSON schema, however [iodocs](https://github.com/mashery/iodocs) did everything else we wanted and had a shiney look and feel. So this evening I forked iodocs and after a couple hours implementing some dirty hacks, I have something that works. 
 
