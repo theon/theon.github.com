@@ -15,10 +15,10 @@ The last point regarding the JSON schema is important for us because we want to 
 
 I wasn't able to find any API documentation tools that supported the ability to define JSON schema, however [iodocs](https://github.com/mashery/iodocs) did everything else we wanted and had a shiney look and feel. So this evening I forked iodocs and after a couple hours implementing some dirty hacks, I have something that works. 
 
-In the iodocs JSON file used to write your API documentation, I added a couple extra fields. The first is at the endpoint level and allows you to specify a list of object schemas you want to re-use across several of your APIs. It is a list of JSON objects in [JSON Schema](http://en.wikipedia.org/wiki/JSON#Schema) format. The second field is at the method level and allows you to define the schema of returned payload from individual API calls. It is also defined in [JSON Schema](http://en.wikipedia.org/wiki/JSON#Schema) format and allows you to reference the global schema when required.
+In the iodocs JSON file used to write your API documentation, I added a three extra fields. The first is at the top level of the config file and allows you to specify a list of object schemas you want to re-use across several of your APIs. It is a list of JSON objects in [JSON Schema](http://en.wikipedia.org/wiki/JSON#Schema) format. The next two fields are at the method level and allows you to define the schema of request and response payloads from individual API calls. It is also defined in [JSON Schema](http://en.wikipedia.org/wiki/JSON#Schema) format and allows you to reference the global schema when required by using the JSON Schema `extends` property.
 
 The output looks pretty similar to the actual returned payloads, except with types instead of values. Types are clickable and will take you to the global schema section. 
 
 Here is [the fork](https://github.com/theon/iodocs), an [example api documentation JSON file](https://github.com/theon/iodocs/blob/master/public/data/zoo.json) and a screenshot of the output:
 
-![iodocs with JSON schema](https://lh6.googleusercontent.com/-w7n5eVl4rrc/T5cZiGLimeI/AAAAAAAACb0/euv371Xsy-w/s687/iodocs-json-schema.png)
+![iodocs with JSON schema](https://lh5.googleusercontent.com/-HPjmeWGOprU/T5iNFrlWEvI/AAAAAAAACcA/hN6dyUlNc28/s732/iodocs-json-schema2.png)
