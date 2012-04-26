@@ -31,7 +31,7 @@
                 {% endif %}
             {# other items #}
             {% else %} 
-                {% include 'recent_articles.html' %}
+                {% include 'recent_article_infos.html' %}
             {% endif %}
             {% if loop.last and (articles_page.has_previous() 
                or not articles_page.has_previous() and loop.length > 1) %}
