@@ -33,4 +33,22 @@
 
 </article>
 </section>
+
+
+{% if articles %}
+    <section id="content" class="body">
+        <h1>Recent articles</h1>
+        <hr />
+        <ol id="posts-list" class="hfeed">
+            {% for article in articles_page.object_list %}
+                {% include 'recent_article_infos.html' %}
+        
+                {% if loop.last and (articles_page.has_previous() 
+                   or not articles_page.has_previous() and loop.length > 1) %}
+                    {% include 'pagination.html' %}
+                {% endif %}
+            {% endfor %}
+        </ol><!-- /#posts-list -->
+    </section><!-- /#content -->
+{% endif %}
 {% endblock %}
