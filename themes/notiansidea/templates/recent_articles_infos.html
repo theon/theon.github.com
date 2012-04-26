@@ -1,0 +1,19 @@
+
+    {% if loop.first and articles_page.has_previous %}
+        <section id="content" class="body">
+            <ol id="posts-list" class="hfeed" start="{{ articles_paginator.per_page -1 }}">
+    {% endif %}
+    <li><article class="hentry">    
+        <header>
+                <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a></h1>
+        </header>
+        
+        <div class="entry-content">
+        {% include 'article_infos_basic.html' %}
+        {{ article.summary }}
+<div class="readmore">
+        	<a href="{{ SITEURL }}/{{ article.url }}">read more</a>
+</div>
+        {% include 'taglist.html' %}{% include 'comments.html' %}
+        </div><!-- /.entry-content -->
+    </article></li>
