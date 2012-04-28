@@ -162,12 +162,6 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
         letter-spacing: 0;
 	}
     
-    @-moz-document url-prefix() {
-        #banner h1 a:link, #banner h1 a:visited {
-            letter-spacing: -4px;
-        }
-    }
-    
 	#banner h1 a:hover, #banner h1 a:active {
 		background: none;
 		color: #C74350;
