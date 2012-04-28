@@ -134,6 +134,11 @@ aside, nav, article, figure {
 	display: block;
 }
 
+.youtubevid {
+    width: 853px;
+    margin: 40px auto;
+}
+
 /***** Layout *****/
 .body {clear: both; margin: 0 2%;}
 img.right figure.right {float: right; margin: 0 0 2em 2em;}
