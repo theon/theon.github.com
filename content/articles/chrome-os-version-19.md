@@ -29,4 +29,4 @@ I much prefered it before, when Chrome could use up the entire screen and I coul
 
 It's not all bad news. Pasting into the terminal is no longer practically impossible - damn that used to bug me, you can also now edit Google Docs offline and the file manger is a bit nicer. 
 
-Despite this, I'm not a fan of the desktop and the shelf - Chrome OS has gone down hill in my view.
+Despite this, and the desktop and the shelf getting praise from [techradar](http://www.techradar.com/reviews/pc-mac/software/operating-systems/new-chrome-os-1082513/review/page:4#articleContent) and [engadget](http://www.engadget.com/2012/05/29/chrome-os-review-version-19/),  I'm not a fan and Chrome OS has gone a little down hill in my view.
