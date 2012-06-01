@@ -14,7 +14,7 @@ One of the big changes was the addition of a desktop with a wallpaper. When Goog
 
 ![Chrome OS 19 with Desktop](https://lh5.googleusercontent.com/-0ZvU_Yazvao/T8kijD9fyJI/AAAAAAAACh8/Ou8XYZG3BUk/s800/screenshot-20120601-195339.png)
 
-So why include one now? To be honest, I have no idea. You can't really use it for much. You can't drop files or shortcuts onto it. It's simply a space that allows you to resize your browser windows. In previous versions of Chrome OS, your browser window was always maximised until you opened a second window at which point you were able to do some simple window tiling and that was about it. But it worked and I prefered the simplicity of this approach. 
+So why include one now? To be honest, I have no idea. You can't really use it for much. You can't drop files or shortcuts onto it. It's simply a space that allows you to resize your browser windows. In previous versions of Chrome OS, your browser window was always maximised until you opened a second window at which point you were able to do some simple window tiling and that was about it. But it worked and I prefered the simplicity of that approach. 
 
 # The Shelf
 
