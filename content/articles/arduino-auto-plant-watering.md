@@ -58,6 +58,6 @@ Blah blah blah
 
 <div id="time-series1" class="time-series">
     <script type="text/javascript">
-        renderTimeSeries("1023 - (sum(moisture(moisture)) / sum(moisture))", "Moisture Level", "#time-series1", [0, 1023]);
+        renderTimeSeries("1023 - (sum(moisture(moisture)) / sum(moisture))", "Moisture Level", "#time-series1", [0, 4092]);
     </script>
 </div>
