@@ -5,10 +5,10 @@ Category: Posts
 Author: Ian Forsey
 Status: draft
 
-<script type="text/javascript" src="/theme/posts/arduino-plant-watering/d3.v2.js"></script>
-<script type="text/javascript" src="/theme/posts/arduino-plant-watering/cubism.v1.js"></script>
+<script type="text/javascript" src="http://theon.github.com/theme/posts/arduino-plant-watering/d3.v2.js"></script>
+<script type="text/javascript" src="http://theon.github.com/theme/posts/arduino-plant-watering/cubism.v1.js"></script>
 <style>
-    @import url(/theme/posts/arduino-plant-watering/style.css);
+    @import url(http://theon.github.com/theme/posts/arduino-plant-watering/style.css);
 </style>
 <script type="text/javascript">
     function renderTimeSeries(expression, title, container, extent) {
