@@ -17,7 +17,24 @@ Status: draft
                             .clientDelay(0)
                             .step(3e5) //5 minute
                             .size(800);
-                                             
+        
+        var horizon = context.horizon();
+        horizon.height(300);
+        horizon.title(title);
+        horizon.extent(extent);
+        
+        var cube = context.cube("http://54.247.99.12:1081");
+        var metric = cube.metric(expression);
+        var metrics = [
+            metric
+        ];
+        
+        d3.select(container).selectAll(".horizon")
+            .data(metrics)
+        .enter().append("div")
+            .attr("class", "horizon")
+            .call(horizon);
+        
         d3.select(container).selectAll(".axis")
             .data(["top", "bottom"])
           .enter().append("div")
@@ -30,23 +47,8 @@ Status: draft
         
         context.on("focus", function(i) {
           d3.selectAll(".value").style("right", i == null ? null : context.size() - i + "px");
+          d3.selectAll(".value").text(parseInt(metric.valueAt(parseInt(i))));
         });
-        
-        var horizon = context.horizon();
-        horizon.height(300);
-        horizon.title(title);
-        horizon.extent(extent);
-        
-        var cube = context.cube("http://54.247.99.12:1081");
-        var metrics = [
-            cube.metric(expression)
-        ];
-        
-        d3.select(container).selectAll(".horizon")
-            .data(metrics)
-        .enter().append("div")
-            .attr("class", "horizon")
-            .call(horizon);
     }
 </script>
 
