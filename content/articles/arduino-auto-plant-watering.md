@@ -1,5 +1,5 @@
 Date: 2012-09-09
-Title: Automated Plant Watering with Arduino
+Title: Plant Watering with Arduino
 Tags: arduino, cube, cubism, nodejs
 Category: Posts
 Author: Ian Forsey
@@ -23,7 +23,7 @@ Status: draft
         horizon.title(title);
         horizon.extent(extent);
         
-        var cube = context.cube("http://54.247.99.12:1081");
+        var cube = context.cube("http://54.247.99.12");
         var metric = cube.metric(expression);
         var metrics = [
             metric
@@ -47,12 +47,16 @@ Status: draft
         
         context.on("focus", function(i) {
           d3.selectAll(".value").style("right", i == null ? null : context.size() - i + "px");
-          d3.selectAll(".value").text(parseInt(metric.valueAt(parseInt(i))));
+          
+          var val = parseInt(metric.valueAt(parseInt(i)));
+          if(!isNaN(val)) {
+            d3.selectAll(".value").text(val);
+          }
         });
     }
 </script>
 
-# Moisture
+# Automating My Chilli Plant
 
 Blah blah blah
 
