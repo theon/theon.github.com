@@ -102,3 +102,8 @@ Blah blah blah
         renderTimeSeries("1023 - max(moisture(moisture))", "Moisture Max", "#time-series2", [0, 1023], 3e5, ["#08519c", "#6baed6"]);
     </script>
 </div>
+
+<script type="text/javascript">
+    addRules();
+    setTimeout(drawWaterLine, 1000);
+</script>
