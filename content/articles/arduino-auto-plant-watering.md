@@ -80,7 +80,7 @@ Status: draft
         ctx.strokeStyle = "#F66";
         ctx.lineWidth = 1;
         
-        var amount = (moistureExtent - 250) * (moistureHeight / moistureExtent);
+        var amount = (moistureExtent - 350) * (moistureHeight / moistureExtent);
         ctx.moveTo(0, amount);
         ctx.lineTo(800, amount);
         ctx.stroke();
@@ -93,13 +93,13 @@ Blah blah blah
 
 <div id="moisture-time-series" class="time-series">
     <script type="text/javascript">
-        renderTimeSeries("1023 - (sum(moisture(moisture)) / sum(moisture))", "Moisture Level", "#moisture-time-series", [0, moistureExtent], 3e5, ["#31a354", "#E9967A"]);
+        renderTimeSeries("1023 - (sum(moisture(moisture)) / sum(moisture))", "Moisture", "#moisture-time-series", [0, moistureExtent], 3e5, ["#31a354", "#E9967A"]);
     </script>
 </div>
 
-<div id="time-series2" class="time-series">
+<div id="watering-time-series" class="time-series">
     <script type="text/javascript">
-        renderTimeSeries("1023 - max(moisture(moisture))", "Moisture Max", "#time-series2", [0, 1023], 3e5, ["#08519c", "#6baed6"]);
+        renderTimeSeries("max(moisture(watered))", "Watering Events", "#watering-time-series", [0, 1], 3e5, ["#08519c", "#6baed6"]);
     </script>
 </div>
 
