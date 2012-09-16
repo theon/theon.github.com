@@ -80,7 +80,7 @@ Status: draft
         ctx.strokeStyle = "#F66";
         ctx.lineWidth = 1;
         
-        var amount = (moistureExtent - 350) * (moistureHeight / moistureExtent);
+        var amount = (moistureExtent - 525) * (moistureHeight / moistureExtent);
         ctx.moveTo(0, amount);
         ctx.lineTo(800, amount);
         ctx.stroke();
