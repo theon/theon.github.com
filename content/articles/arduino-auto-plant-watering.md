@@ -89,9 +89,7 @@ Status: draft
 
 # Automating My Chilli Plant
 
-<a href="https://lh4.googleusercontent.com/-vXV0TmxhJOQ/UFrC4OKp4YI/AAAAAAAACkg/ZXUOlqbvis0/s1280/DSC_0004.JPG">
-    <img src="https://lh4.googleusercontent.com/-vXV0TmxhJOQ/UFrC4OKp4YI/AAAAAAAACkg/ZXUOlqbvis0/s800/DSC_0004.JPG" />
-</a>
+hi
 
 So... I've plugged my chilli plant into the internet. Every minute it will report how moist it's soil is to a server on the web. Below is a live chart of that data - check it out - you can see exactly how moist my chilli plant is right this second. Wow, this is the sort of stuff the Internet was built for... probably.
 
