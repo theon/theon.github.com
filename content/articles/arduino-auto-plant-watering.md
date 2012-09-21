@@ -81,7 +81,7 @@ Author: Ian Forsey
         
         var amount = (moistureExtent - 425) * (moistureHeight / moistureExtent);
         ctx.moveTo(0, amount);
-        ctx.lineTo(800, amount);
+        ctx.lineTo(1000, amount);
         ctx.stroke();
     }
 </script>
