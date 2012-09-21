@@ -8,7 +8,7 @@ Amazon EC2 is pretty awesome. In under a minute you can fire up a server in the 
 
 I've used EC2 to deploy some small public facing projects and have compiled this list of lessons I've learnt along the way.
 
-*Discamer:* The projects I have deployed to EC2 have been small (single instance) proof of concepts and demos, and this post is aimed at people in a similar situation. I haven't used EC2 in anger for production quality software, so am only covering some basics here.
+*Disclaimer:* The projects I have deployed to EC2 have been small (single instance) proof of concepts and demos, and this post is aimed at people in a similar situation. I haven't used EC2 in anger for production quality software, so am only covering some basics here.
 
 # Enable Termination Protection
 
@@ -37,13 +37,13 @@ If you make enabling Termination Protection the first thing you do, then hopeful
 
 Elastic IPs allow you to assign a static IP to your instances and they are free. That is they are free, but only provided you are using them. As soon as your Elastic IPs are not assigned to any instances, they will start coming up in your monthly bill. This is a measure from Amazon to stop people hording IPs, since they are in such short supply at the moment.
 
-So if you unassign one of your Elastic IPs and no longer plan to use it, then release it back into the pool. However, note that this means you will no longer be able to get that specific IP back.
+So if you un-assign one of your Elastic IPs and no longer plan to use it, then release it back into the pool. However, note that this means you will no longer be able to get that specific IP back.
 
 # Monitor with CloudKick
 
 [Cloudkick](https://www.cloudkick.com/) is an awesome way to monitor the health of your EC2 instances and applications deployed to them. It is also free, so check it out!
 
-At the time of writing Cloudkick is transitioning to Rackspace Cloud Monitoring with Cloudkick dissapearing in a year or two, so watch out for that.
+At the time of writing Cloudkick is transitioning to Rackspace Cloud Monitoring with Cloudkick disappearing in a year or two, so watch out for that.
 
 # Name your instances
 

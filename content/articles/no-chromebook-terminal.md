@@ -14,5 +14,5 @@ Reinstalling Chrome OS only takes around 10 minutes and solved the problem for m
 
 Follow [these instructions](http://support.google.com/chromeos/bin/answer.py?hl=en&answer=1080595) to reinstall Chrome OS.
 
-The good thing about being forced to run amost everything in the cloud is that when it comes to reinstalling the OS, you have nothing to lose! No local programs to reinstall. Provided you sync your settings, bookmarks, extensions and webstore apps to Google, you will automatically get them all back after the reinstall is complete.  
+The good thing about being forced to run almost everything in the cloud is that when it comes to reinstalling the OS, you have nothing to lose! No local programs to reinstall. Provided you sync your settings, bookmarks, extensions and webstore apps to Google, you will automatically get them all back after the reinstall is complete.  
 
