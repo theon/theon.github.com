@@ -88,8 +88,8 @@ Author: Ian Forsey
 
 # Automating My Chilli Plant
 
-<a href="https://lh3.googleusercontent.com/-NTL328LHppI/UFrC3c1rNRI/AAAAAAAACkc/jquEdlq8g-Y/s1280/DSC_0002.JPG">
-    <img src="https://lh3.googleusercontent.com/-NTL328LHppI/UFrC3c1rNRI/AAAAAAAACkc/jquEdlq8g-Y/s800/DSC_0002.JPG" />
+<a href="https://lh4.googleusercontent.com/-JgB0BCSNOdA/UF2OyAhWPRI/AAAAAAAACmA/Xo0KV3yP7Ow/s1280/DSC_0038.JPG">
+    <img src="https://lh4.googleusercontent.com/-JgB0BCSNOdA/UF2OyAhWPRI/AAAAAAAACmA/Xo0KV3yP7Ow/s800/DSC_0038.JPG" />
 </a>
 
 So... I've plugged my chilli plant into the internet. Every minute it will report how moist it's soil is to a server on the web. Below is a live chart of that data - check it out - you can see exactly how moist my chilli plant is right this second. Wow, this is the sort of stuff the Internet was built for... probably.
@@ -135,8 +135,8 @@ For actually watering the plant I had to buy a bit more gear. I'd seen people do
  * Arduinos support power adapters [between 9v and 12v](http://arduino.cc/playground/Learning/WhatAdapter), so get a solenoid valve that operates in this range.
  * Check the operating pressure of the valve. The one I bought had a range of 0.02 ~ 0.8Mpa which seemed to work fine for this gravity fed system. 
 
-<a href="https://lh6.googleusercontent.com/-D0WEjl2ZlJ0/UFrDN8JoHQI/AAAAAAAACk0/usNLL5IRiUE/s1280/DSC_0022.JPG">
-    <img src="https://lh6.googleusercontent.com/-D0WEjl2ZlJ0/UFrDN8JoHQI/AAAAAAAACk0/usNLL5IRiUE/s800/DSC_0022.JPG" />
+<a href="https://lh4.googleusercontent.com/-OhWgEsgV8Tc/UF2QLy03ggI/AAAAAAAACmk/IfLZiZKo0z0/s1280/DSC_0050.JPG">
+    <img src="https://lh4.googleusercontent.com/-OhWgEsgV8Tc/UF2QLy03ggI/AAAAAAAACmk/IfLZiZKo0z0/s800/DSC_0050.JPG" />
 </a>
 
 I had the idea of using a hiking hydration system I already had to feed the water, but bought a couple of [hose tails](http://www.ebay.co.uk/itm/220970410428#ht_500wt_923) and a [longer piece of hose](http://www.ebay.co.uk/itm/110777707434#ht_2594wt_956) to hook everything up.  

@@ -1,4 +1,4 @@
- statusDate: 2012-04-24
+Date: 2012-04-24
 Title: Documenting the JSON Schema of your Rest APIs 
 Tags: rest, api, iodocs, mashery, nodejs 
 Category: Posts
