@@ -236,7 +236,6 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 #featured {
 	background: #fff;
 	margin-bottom: 2em;
-	overflow: hidden;
 	padding: 20px;
 	
 	border-radius: 10px;
