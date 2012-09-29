@@ -79,7 +79,7 @@ Author: Ian Forsey
         ctx.strokeStyle = "#F66";
         ctx.lineWidth = 1;
         
-        var amount = (moistureExtent - 275) * (moistureHeight / moistureExtent);
+        var amount = (moistureExtent - 450) * (moistureHeight / moistureExtent);
         ctx.moveTo(0, amount);
         ctx.lineTo(1000, amount);
         ctx.stroke();
@@ -102,7 +102,7 @@ The x-axis is time - one pixel per 5 minutes. The y-axis is moisture level in an
     </script>
 </div>
 
-This data is really useful. I have a tendency to over-water plants and this chart would tell me when the soil was dry enough to warrant a watering. Sometimes the soil would look really dry on the surface, but the chart would indicate a lot of moisture beneath the surface. But seeing as the the arduino now already knows how moist the soil is, the next step was to get the plant to water itself and take my over-watering habits out of the equation all together. So that's what I did. Once the moisture hits a certain threshold, the arduino waters the chilli. At the moment I am using a threshold of <s>`525`</s> <s>`425`</s> `275` which is the red line on the above chart. The below chart indicates events when the chilli has decided to water itself. 
+This data is really useful. I have a tendency to over-water plants and this chart would tell me when the soil was dry enough to warrant a watering. Sometimes the soil would look really dry on the surface, but the chart would indicate a lot of moisture beneath the surface. But seeing as the the arduino now already knows how moist the soil is, the next step was to get the plant to water itself and take my over-watering habits out of the equation all together. So that's what I did. Once the moisture hits a certain threshold, the arduino waters the chilli. At the moment I am using a threshold of <s>`525`</s> <s>`425`</s> `450` which is the red line on the above chart. The below chart indicates events when the chilli has decided to water itself. 
 
 <div id="watering-time-series" class="time-series">
     <script type="text/javascript">
