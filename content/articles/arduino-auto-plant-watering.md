@@ -88,9 +88,11 @@ Author: Ian Forsey
 
 # Automating My Chilli Plant
 
-<a href="https://lh4.googleusercontent.com/-JgB0BCSNOdA/UF2OyAhWPRI/AAAAAAAACmA/Xo0KV3yP7Ow/s1280/DSC_0038.JPG">
-    <img src="https://lh4.googleusercontent.com/-JgB0BCSNOdA/UF2OyAhWPRI/AAAAAAAACmA/Xo0KV3yP7Ow/s800/DSC_0038.JPG" />
-</a>
+<div id="central-section">
+    <a href="https://lh4.googleusercontent.com/-JgB0BCSNOdA/UF2OyAhWPRI/AAAAAAAACmA/Xo0KV3yP7Ow/s1280/DSC_0038.JPG">
+        <img src="https://lh4.googleusercontent.com/-JgB0BCSNOdA/UF2OyAhWPRI/AAAAAAAACmA/Xo0KV3yP7Ow/s800/DSC_0038.JPG" />
+    </a>
+</div>
 
 So... I've plugged my chilli plant into the internet. Every minute it will report how moist it's soil is to a server on the web. Below is a live chart of that data - check it out - you can see exactly how moist my chilli plant is right this second. Wow, this is the sort of stuff the Internet was built for... probably.
 
@@ -124,30 +126,42 @@ For the moisture recording part of the project I didn't need to buy any special 
 
 I found some galvanised picture hooks in a toolkit to use as prongs for the sensor. I just had to solder some wire to them and glue them to a small block of plastic to keep them at a consistent distance.
 
-[![moisture sensor](https://lh4.googleusercontent.com/-jfG1R8Uwtik/UFrDontTRuI/AAAAAAAAClk/Mr5DHIPc7bc/s800/DSC_0030.JPG)](https://lh4.googleusercontent.com/-jfG1R8Uwtik/UFrDontTRuI/AAAAAAAAClk/Mr5DHIPc7bc/s1280/DSC_0030.JPG)
+<div id="central-section">
+    <a href="https://lh4.googleusercontent.com/-jfG1R8Uwtik/UFrDontTRuI/AAAAAAAAClk/Mr5DHIPc7bc/s1280/DSC_0030.JPG">
+        <img src="https://lh4.googleusercontent.com/-jfG1R8Uwtik/UFrDontTRuI/AAAAAAAAClk/Mr5DHIPc7bc/s800/DSC_0030.JPG" />
+    </a>
+</div>
 
 The diagram below shows the circuit. I tried the three different resistors I had to hand and the highest one (10kΩ) seems to work the best.
 
-![moisture sensor circuit](https://lh4.googleusercontent.com/-4ByM_14M6bw/UFeFtuf2CpI/AAAAAAAACj0/5fUmZlYOzqA/s400/moisture-circuit.png)
+<div id="central-section">
+    <img src="https://lh4.googleusercontent.com/-4ByM_14M6bw/UFeFtuf2CpI/AAAAAAAACj0/5fUmZlYOzqA/s400/moisture-circuit.png" />
+</div>
 
 For actually watering the plant I had to buy a bit more gear. I'd seen people do projects like this with mains powered water pumps, but that felt a little overkill to me. I wanted to do it with a simple valve and the power of gravity. I also wanted the valve to be powered via the arduino without having to use an external power supply. I ended up buying [this one](http://www.ebay.co.uk/itm/Pressure-Solar-Water-Heater-Dedicated-12V-Solenoid-Valve-/170860701640?pt=LH_DefaultDomain_3&hash=item27c81767c8#ht_5001wt_1190) for 4 quid. Two things to look out for if you are doing a similar project:
 
  * Arduinos support power adapters [between 9v and 12v](http://arduino.cc/playground/Learning/WhatAdapter), so get a solenoid valve that operates in this range.
  * Check the operating pressure of the valve. The one I bought had a range of 0.02 ~ 0.8Mpa which seemed to work fine for this gravity fed system. 
 
-<a href="https://lh4.googleusercontent.com/-OhWgEsgV8Tc/UF2QLy03ggI/AAAAAAAACmk/IfLZiZKo0z0/s1280/DSC_0050.JPG">
-    <img src="https://lh4.googleusercontent.com/-OhWgEsgV8Tc/UF2QLy03ggI/AAAAAAAACmk/IfLZiZKo0z0/s800/DSC_0050.JPG" />
-</a>
+<div id="central-section">
+    <a href="https://lh4.googleusercontent.com/-OhWgEsgV8Tc/UF2QLy03ggI/AAAAAAAACmk/IfLZiZKo0z0/s1280/DSC_0050.JPG">
+        <img src="https://lh4.googleusercontent.com/-OhWgEsgV8Tc/UF2QLy03ggI/AAAAAAAACmk/IfLZiZKo0z0/s800/DSC_0050.JPG" />
+    </a>
+</div>
 
 I had the idea of using a hiking hydration system I already had to feed the water, but bought a couple of [hose tails](http://www.ebay.co.uk/itm/220970410428#ht_500wt_923) and a [longer piece of hose](http://www.ebay.co.uk/itm/110777707434#ht_2594wt_956) to hook everything up.  
 
-<a href="https://lh4.googleusercontent.com/-aj5cam38x20/UFrCzxruUrI/AAAAAAAACkU/9d3uFWUyIjc/s1280/DSC_0015.JPG">
-    <img src="https://lh4.googleusercontent.com/-aj5cam38x20/UFrCzxruUrI/AAAAAAAACkU/9d3uFWUyIjc/s800/DSC_0015.JPG" />
-</a>
+<div id="central-section">
+    <a href="https://lh4.googleusercontent.com/-aj5cam38x20/UFrCzxruUrI/AAAAAAAACkU/9d3uFWUyIjc/s1280/DSC_0015.JPG">
+        <img src="https://lh4.googleusercontent.com/-aj5cam38x20/UFrCzxruUrI/AAAAAAAACkU/9d3uFWUyIjc/s800/DSC_0015.JPG" />
+    </a>
+</div>
 
 Below is the circuit diagram for driving the solenoid valve. My electronics knowledge is poor, however I managed to cobble this together from various research and it seems to work. The arduino's VIN pin gives you access to the the input voltage when using a mains adapter to power the arduino. I used a 12V 1500mA adapter I had in the flat. The diode in parallel with the solenoid is there as a [snubber diode](http://en.wikipedia.org/wiki/Flyback_diode).  
 
-![solenoid valve circuit](https://lh3.googleusercontent.com/-cn581J1INpY/UFeSmFHvOjI/AAAAAAAACkE/x8ZQXeEcZq0/s400/solenoid-valve.png)
+<div id="central-section">
+    <img src="https://lh3.googleusercontent.com/-cn581J1INpY/UFeSmFHvOjI/AAAAAAAACkE/x8ZQXeEcZq0/s400/solenoid-valve.png" />
+</div>
 
 ## Software
 
