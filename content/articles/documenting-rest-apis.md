@@ -22,5 +22,5 @@ The output looks pretty similar to the actual returned payloads, except with typ
 Here is [the fork](https://github.com/theon/iodocs), an [example api documentation JSON file](https://github.com/theon/iodocs/blob/master/public/data/zoo.json) and a screenshot of the output:
 
 <div class="central-section">
-    <a href="https://lh5.googleusercontent.com/-HPjmeWGOprU/T5iNFrlWEvI/AAAAAAAACcA/hN6dyUlNc28/s732/iodocs-json-schema2.png" />
+    <img src="https://lh5.googleusercontent.com/-HPjmeWGOprU/T5iNFrlWEvI/AAAAAAAACcA/hN6dyUlNc28/s732/iodocs-json-schema2.png" />
 </div>
