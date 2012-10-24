@@ -12,7 +12,8 @@ The first thing I did was order a gigantic battery. This [2600mAh battery](http:
 The next thing I wanted to so was tweak the device's homescreen. I wanted something simple as all I needed to do with this device was launch My Tracks to record walks, launch Google Drive to transfer exported recordings over WiFi and to have some sort of indication of the battery level. 
 
 <div class="central-section">
-![homescreen](https://lh3.googleusercontent.com/-ZKxfWMj2ucc/UIhYTsxQI5I/AAAAAAAACm4/sgNH0Hz6Cnw/s320/ScreenShot.png) ![Walking round ham](https://lh5.googleusercontent.com/-XbwHTCnmEQI/UIhYT5_lP5I/AAAAAAAACm8/uB64SeimZwE/s320/ScreenShot%2520%25281%2529.png)
+    <img src="https://lh3.googleusercontent.com/-ZKxfWMj2ucc/UIhYTsxQI5I/AAAAAAAACm4/sgNH0Hz6Cnw/s320/ScreenShot.png" />
+    <img src="https://lh5.googleusercontent.com/-XbwHTCnmEQI/UIhYT5_lP5I/AAAAAAAACm8/uB64SeimZwE/s320/ScreenShot%2520%25281%2529.png" />
 </div>
 
 I already had [CyanogenMod](http://www.cyanogenmod.com) installed on the Tattoo which comes with the super flexible [ADW Launcher](https://play.google.com/store/apps/details?id=org.adw.launcher&hl=en). In the ADW.L settings I did the following:
