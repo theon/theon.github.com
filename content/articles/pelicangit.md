@@ -10,7 +10,9 @@ I stumbled across [calepin](http://calepin.co/) which seemed more along the righ
 
 Here is a diagram showing the pelican set up behind this blog:
 
-![pelicangit diagram](http://lh4.googleusercontent.com/-KPeKZ92FhaE/T4IeoedMY_I/AAAAAAAACXE/fSpxiJ_iCwE/s876/PelicanGit.png)
+<div class="central-section">
+    <img src="http://lh4.googleusercontent.com/-KPeKZ92FhaE/T4IeoedMY_I/AAAAAAAACXE/fSpxiJ_iCwE/s876/PelicanGit.png" />
+</div>
 
 I write my posts in markdown and push them to a github repo. A git service hook then causes a pelican instance running in Amazon EC2 to convert this markdown to HTML and push it to a [github pages](http://pages.github.com/) repo for hosting. It's worth noting that github pages and Cloud9 IDE are completely free at the time of writing. EC2 have a year long free tier before charging.  
 
