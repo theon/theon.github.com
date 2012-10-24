@@ -22,7 +22,7 @@ I already had [CyanogenMod](http://www.cyanogenmod.com) installed on the Tattoo 
 I also changed more general settings:
 
  * **Menu > Edit** - Remove all but one home screens
- * Because I'd remove the dock, I added an 'open app drawer' icon to the homescreen, using the following icon: ![app drawer icon](https://lh5.googleusercontent.com/-iEcJuj82usI/UIhkmT1vRXI/AAAAAAAACnQ/ZsUPANvmjDM/s128/1926603215.jpg)
+ * Because I'd remove the dock, I added an 'open app drawer' icon to the homescreen, using the following icon: <img src="https://lh5.googleusercontent.com/-iEcJuj82usI/UIhkmT1vRXI/AAAAAAAACnQ/ZsUPANvmjDM/s128/1926603215.jpg" width="20" height="20" />
 
 Finally I added a couple widgets to my homescreen:
 
