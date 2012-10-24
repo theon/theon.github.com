@@ -7,7 +7,7 @@ Status: draft
 
 I do a fair bit of walking with my girlfriend at the weekends and I like to record the routes using my phone and an app like [My Tracks](http://www.google.com/mobile/mytracks/). Unfortunately, I was finding that my current device (the [Evo 3D](http://en.wikipedia.org/wiki/HTC_Evo_3D)) wouldn't have enough battery to last the distance a lot of the time. It was fine for a run around the park, but a day long hike with GPS on constantly was just too much to ask. It must be all those CPU cores supping up all the juice... Then I had the idea to transform an old [HTC Tattoo](http://en.wikipedia.org/wiki/HTC_Tattoo) I had gathering dust in a drawer into a single purpose GPS unit. 
 
-The first thing I did was order a gigantic battery. This [2600mAh battery](http://www.amazon.co.uk/gp/product/B004W1J0CW/ref=oh_details_o02_s00_i00) is almost 2.5 times larger than the stock 1100mAh battery which allows the Tattoo to last a whole day with GPS constantly on.
+The first thing I did was order a gigantic battery. This [2600mAh battery](http://www.amazon.co.uk/gp/product/B004W1J0CW/ref=oh_details_o02_s00_i00) is almost 2.5 times larger than the stock 1100mAh battery that comes with the the Tattoo and helps the device last a whole day with GPS constantly on.
 
 The next thing I wanted to so was tweak the device's homescreen. I wanted something simple as all I needed to do with this device was launch My Tracks to record walks, launch Google Drive to transfer exported recordings over WiFi and to have some sort of indication of the battery level. 
 
