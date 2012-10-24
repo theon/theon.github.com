@@ -1,6 +1,6 @@
 Date: 2012-04-28
 Title: Remote Controlled Thermostat with Arduino
-Tags: arduino, scala, spring, jetty
+Tags: arduino, hack, scala, spring, jetty
 Category: Posts
 Author: Ian Forsey
 

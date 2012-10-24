@@ -1,6 +1,6 @@
 Date: 2012-09-21
 Title: Plant Watering with Arduino
-Tags: arduino, cube, cubism, nodejs, amazon ec2
+Tags: arduino, hack, cube, cubism, nodejs, amazon ec2
 Category: Posts
 Author: Ian Forsey
 
