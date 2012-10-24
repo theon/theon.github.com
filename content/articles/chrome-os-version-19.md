@@ -13,7 +13,7 @@ Why you ask? Well, Google made a bold statement with their initial release of Ch
 One of the big changes was the addition of a desktop with a wallpaper. When Google launched Chrome OS it was a pretty brave not to include a desktop, but they did it with good reason - there simply wasn't any point having one. When you just have chrome and not much else, there is not a whole lot of need for a desktop.
 
 <div class="central-section">
-    <a href="https://lh5.googleusercontent.com/-0ZvU_Yazvao/T8kijD9fyJI/AAAAAAAACh8/Ou8XYZG3BUk/s800/screenshot-20120601-195339.png" />
+    <img src="https://lh5.googleusercontent.com/-0ZvU_Yazvao/T8kijD9fyJI/AAAAAAAACh8/Ou8XYZG3BUk/s800/screenshot-20120601-195339.png" />
 </div>
 
 So why include one now? To be honest, I have no idea. You can't really use it for much. You can't drop files or shortcuts onto it. It's simply a space that allows you to resize your browser windows. In previous versions of Chrome OS, your browser window was always maximised until you opened a second window at which point you were able to do some simple window tiling and that was about it. But it worked and I preferred the simplicity of that approach. 
@@ -23,7 +23,7 @@ So why include one now? To be honest, I have no idea. You can't really use it fo
 The clock, battery and WiFi indicators have moved from the Chrome window title bar to an auto-hide dock called the Shelf. I like these indicators to be visible at all time which means I now need to set the Shelf to 'Always visible', which is somewhat annoying because it eats into some of my screen real-estate.
 
 <div class="central-section">
-    <a href="https://lh6.googleusercontent.com/-t7F_TvsYh-A/T8kigWgjxxI/AAAAAAAACh0/d7qpxnoxE_w/s800/screenshot-20120601-203543.png" />
+    <img src="https://lh6.googleusercontent.com/-t7F_TvsYh-A/T8kigWgjxxI/AAAAAAAACh0/d7qpxnoxE_w/s800/screenshot-20120601-203543.png" />
 </div>
 
 I much preferred it before, when Chrome could use up the entire screen and I could still have the clock always visible.
