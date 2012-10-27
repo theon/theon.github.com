@@ -33,11 +33,11 @@ I already had [CyanogenMod](http://www.cyanogenmod.com) installed on the Tattoo 
 I also changed more general settings:
 
  * **Menu > Edit** - Remove all but one home screens
- * Because I'd remove the dock, I added an 'open app drawer' icon to the homescreen, using the following icon: <img src="https://lh5.googleusercontent.com/-iEcJuj82usI/UIhkmT1vRXI/AAAAAAAACnQ/ZsUPANvmjDM/s128/1926603215.jpg" width="20" height="20" />
+ * Because I'd removed the dock, I added an 'open app drawer' icon to the homescreen, using the following icon: <img src="https://lh5.googleusercontent.com/-iEcJuj82usI/UIhkmT1vRXI/AAAAAAAACnQ/ZsUPANvmjDM/s128/1926603215.jpg" width="20" height="20" />
 
 Finally I added a couple widgets to my homescreen:
 
  * [Simple Battery Widget](https://play.google.com/store/apps/details?id=at.dsteiner.android.simplebatterywidget&feature=search_result#?t=W251bGwsMSwxLDEsImF0LmRzdGVpbmVyLmFuZHJvaWQuc2ltcGxlYmF0dGVyeXdpZGdldCJd) sits in the middle of the homescreen
  * [Digital Clock Widget](https://play.google.com/store/apps/details?id=com.maize.digitalClock&feature=search_result#?t=W251bGwsMSwxLDEsImNvbS5tYWl6ZS5kaWdpdGFsQ2xvY2siXQ..) as seeing the time is always useful.
 
-And that's it. It feels good taking something that was useless and turning it into something useful.
+And that's it. It feels good taking something that was gathering dust and turning it into something useful.
