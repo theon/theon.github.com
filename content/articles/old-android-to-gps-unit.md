@@ -3,7 +3,6 @@ Title: Repurposing My Old Android
 Tags: android, gps, hack, cyanogenmod, adw.l
 Category: Posts
 Author: Ian Forsey
-Status: draft
 
 <div class="central-section">
     <img src="https://lh4.googleusercontent.com/-P3XGy9cqmac/UIv_ViCW0KI/AAAAAAAACn0/lGmHqOHfL_4/s800/DSC_0046.JPG" />
