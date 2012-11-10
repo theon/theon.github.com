@@ -251,7 +251,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 }
 #featured figure img {display: block; float: right;}
 
-#featured h2 {color: #C74451; font-size: 1.714em;}
+#featured h2 {color: #000305; font-size: 1.714em;}
 #featured h3 {font-size: 1.429em; margin-bottom: .5em;}
 
 #featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
