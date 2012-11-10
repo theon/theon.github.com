@@ -2,7 +2,7 @@ Title: About
 
 # About Me
 
-<img style="float:right;" src="https://lh3.googleusercontent.com/-aIuNQy3kTCA/UJ507nw2GCI/AAAAAAAACpI/_yshGRaRSN4/s128/profile.jpg" />
+<img style="display:none; float:right;" src="https://lh3.googleusercontent.com/-aIuNQy3kTCA/UJ507nw2GCI/AAAAAAAACpI/_yshGRaRSN4/s128/profile.jpg" />
 
 I'm a developer with a background in Java. These days I work in a Labs team at [Net-A-Porter](http://www.net-a-porter.com) as an all-purpose server-side developer which is pretty awesome because I get to play around with lots of different tech every day.
 
