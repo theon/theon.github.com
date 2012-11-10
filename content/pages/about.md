@@ -2,7 +2,18 @@ Title: About
 
 # About Me
 
-I'm a developer with a background in Java. These days I work in a Labs team at [Net-A-Porter](http://www.net-a-porter.com) as an all-purpose server-side developer which is pretty awesome because I get to play around with lots of different tech every day.  
+<img style="float:right;" src="https://lh3.googleusercontent.com/-aIuNQy3kTCA/UJ507nw2GCI/AAAAAAAACpI/_yshGRaRSN4/s128/profile.jpg" />
+
+I'm a developer with a background in Java. These days I work in a Labs team at [Net-A-Porter](http://www.net-a-porter.com) as an all-purpose server-side developer which is pretty awesome because I get to play around with lots of different tech every day.
+
+Here's me on the web:
+
+<a href="http://stackexchange.com/users/900623">
+<img src="http://stackexchange.com/users/flair/900623.png" width="208" height="58" alt="profile for theon on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for theon on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+</a>
+
+<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&type=follow&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
 
 # About this blog
 

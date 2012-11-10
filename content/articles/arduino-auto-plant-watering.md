@@ -4,6 +4,20 @@ Tags: arduino, hack, cube, cubism, nodejs, amazon ec2
 Category: Posts
 Author: Ian Forsey
 
+# Automating My Chilli Plant
+
+<div class="central-section">
+    <a href="https://lh4.googleusercontent.com/-JgB0BCSNOdA/UF2OyAhWPRI/AAAAAAAACmA/Xo0KV3yP7Ow/s1280/DSC_0038.JPG">
+        <img src="https://lh4.googleusercontent.com/-JgB0BCSNOdA/UF2OyAhWPRI/AAAAAAAACmA/Xo0KV3yP7Ow/s800/DSC_0038.JPG" />
+    </a>
+</div>
+
+So... I've plugged my chilli plant into the internet. Every minute it will report how moist its soil is to a server on the web. Below is a live chart of that data - check it out - you can see exactly how moist my chilli plant is right this second. Wow, this is the sort of stuff the Internet was built for... probably.
+
+The x-axis is time - one pixel per 5 minutes. The y-axis is moisture level in an arbitrary unit - the number is actually a reading of one of the arduino's analogue pins which has 10 bits of resolution, so it has the theoretical range of `0` - `1023`. Saying that if the chart ever reads `0`, then my chilli has either been long dead, or I have hi-jacked the arduino for my next project. A normal reading should be somewhere in the range of `400` - `800`.
+
+_*Update 2012-11-05:* The Arduino Plant Watering system has been shut down for now. It did it's job, I got some tasty chillis and now I need the arduino for the next project. Here's a couple images of what the charts to give you an idea what the did looks like. They were lovely interactive HTML5 canvas elements originally - trust me ;) Check out this [git repo](https://github.com/theon/auto-watering-system) for the code_
+
 <script type="text/javascript" src="http://theon.github.com/theme/posts/arduino-plant-watering/d3.v2.js"></script>
 <script type="text/javascript" src="http://theon.github.com/theme/posts/arduino-plant-watering/cubism.v1.js"></script>
 <style>
@@ -85,21 +99,6 @@ Author: Ian Forsey
         ctx.stroke();
     }
 </script>
-
-# Automating My Chilli Plant
-
-<div class="central-section">
-    <a href="https://lh4.googleusercontent.com/-JgB0BCSNOdA/UF2OyAhWPRI/AAAAAAAACmA/Xo0KV3yP7Ow/s1280/DSC_0038.JPG">
-        <img src="https://lh4.googleusercontent.com/-JgB0BCSNOdA/UF2OyAhWPRI/AAAAAAAACmA/Xo0KV3yP7Ow/s800/DSC_0038.JPG" />
-    </a>
-</div>
-
-So... I've plugged my chilli plant into the internet. Every minute it will report how moist its soil is to a server on the web. Below is a live chart of that data - check it out - you can see exactly how moist my chilli plant is right this second. Wow, this is the sort of stuff the Internet was built for... probably.
-
-The x-axis is time - one pixel per 5 minutes. The y-axis is moisture level in an arbitrary unit - the number is actually a reading of one of the arduino's analogue pins which has 10 bits of resolution, so it has the theoretical range of `0` - `1023`. Saying that if the chart ever reads `0`, then my chilli has either been long dead, or I have hi-jacked the arduino for my next project. A normal reading should be somewhere in the range of `400` - `800`.
-
-_*Update 2012-11-05:* The Arduino Plant Watering system has been shut down for now. It did it's job, I got some tasty chillis and now I need the arduino for the next project. Here's a couple images of what the charts to give you an idea what the did looks like. They were lovely interactive HTML5 canvas elements originally - trust me ;) Check out this [git repo](https://github.com/theon/auto-watering-system) for the code_
-
 <div id="old-moisture-time-series" class="time-series">
     <script type="text/javascript">
         //renderTimeSeries("1023 - (sum(moisture(moisture)) / sum(moisture))", "Moisture", "#moisture-time-series", [0, moistureExtent], 3e5, ["#31a354", "#E9967A"]);
