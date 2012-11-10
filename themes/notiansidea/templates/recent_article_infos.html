@@ -8,9 +8,9 @@
         {% include 'article_infos_basic.html' %}
         {{ article.summary }}
 <div class="readmore">
-        	<a href="{{ SITEURL }}/{{ article.url }}">read more</a>
-            <a href="http://www.instapaper.com/e2?url={{ SITEURL }}/{{ article.url }}&title={{ article.title }}">read later</a>
-</div>
+            <a href="http://www.instapaper.com/hello2?url=http://theon.github.com/{{ article.url }}&title={{ article.title }}">read later</a>
+        	<a href="{{ SITEURL }}/{{ article.url }}">read now</a>
+        </div>
         {% include 'taglist.html' %}{% include 'comments.html' %}
         </div><!-- /.entry-content -->
     </article></li>
