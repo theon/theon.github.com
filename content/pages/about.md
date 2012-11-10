@@ -6,6 +6,7 @@ Title: About
 
 I'm a developer with a background in Java. These days I work in a Labs team at [Net-A-Porter](http://www.net-a-porter.com) as an all-purpose server-side developer which is pretty awesome because I get to play around with lots of different tech every day.
 
+<div style="display:none">
 Here's me on the web:
 
 <a href="http://stackexchange.com/users/900623">
@@ -14,6 +15,8 @@ Here's me on the web:
 
 <iframe src="http://ghbtns.com/github-btn.html?user=markdotto&type=follow&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
+
+</div>
 
 # About this blog
 
