@@ -4,7 +4,7 @@ Title: About
 
 <img style="display:none; float:right;" src="https://lh3.googleusercontent.com/-aIuNQy3kTCA/UJ507nw2GCI/AAAAAAAACpI/_yshGRaRSN4/s128/profile.jpg" />
 
-I'm a developer with a background in Java. These days I work in a Labs team at [Net-A-Porter](http://www.net-a-porter.com) as an all-purpose server-side developer which is pretty awesome because I get to play around with lots of different tech every day.
+I'm a developer with a background in Java. These days I work in a Labs team at [Net-a-Porter](http://www.net-a-porter.com) as an all-purpose server-side developer which is pretty awesome because I get to play around with lots of different tech every day. Do check out the Net-a-Porter [tech blog](http://techblog.net-a-porter.com/).
 
 <div style="display:none">
 Here's me on the web:
