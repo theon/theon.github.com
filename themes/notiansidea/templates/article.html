@@ -5,7 +5,12 @@
 <section id="content" class="body">    
 <article>
         <header> 
-        {% include 'article_infos_basic.html' %}
+            <footer class="post-info">
+                <h2 class="published" title="{{ article.date.isoformat() }}">
+                        {{ article.locale_date }}
+                </h2>
+                <a href="http://www.instapaper.com/hello2?url=http://theon.github.com/{{ article.url }}&title={{ article.title }}">read later</a>
+            </footer>
         <h1 class="entry-title"><a href="{{ pagename }}"
         rel="bookmark" title="Permalink to {{ article.title }}">{{ article.title
         }}</a></h1> {% include 'twitter.html' %} </header>
