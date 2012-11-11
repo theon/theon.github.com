@@ -16,7 +16,10 @@ So... I've plugged my chilli plant into the internet. Every minute it will repor
 
 The x-axis is time - one pixel per 5 minutes. The y-axis is moisture level in an arbitrary unit - the number is actually a reading of one of the arduino's analogue pins which has 10 bits of resolution, so it has the theoretical range of `0` - `1023`. Saying that if the chart ever reads `0`, then my chilli has either been long dead, or I have hi-jacked the arduino for my next project. A normal reading should be somewhere in the range of `400` - `800`.
 
-_*Update 2012-11-05:* The Arduino Plant Watering system has been shut down for now. It did it's job, I got some tasty chillis and now I need the arduino for the next project. Here's a couple images of what the charts to give you an idea what the did looks like. Originally they were lovely interactive HTML5 canvas charts with axes - trust me ;) Check out this [git repo](https://github.com/theon/auto-watering-system) for the code_
+<p class="info-box">
+    <strong>Update 2012-11-05:</strong> 
+    <em>The Arduino Plant Watering system has been shut down for now. It did it's job, I got some tasty chillis and now I need the arduino for the next project. Here's a couple of images to give you an idea of what the charts originally looked like. Originally they were lovely interactive HTML5 canvas charts with axes - trust me ;) Check out this [git repo](https://github.com/theon/auto-watering-system) for the code behind the original charts.</em>
+</p>
 
 <script type="text/javascript" src="http://theon.github.com/theme/posts/arduino-plant-watering/d3.v2.js"></script>
 <script type="text/javascript" src="http://theon.github.com/theme/posts/arduino-plant-watering/cubism.v1.js"></script>

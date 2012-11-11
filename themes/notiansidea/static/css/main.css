@@ -365,6 +365,14 @@ article footer { text-align: center; }
 
 /***** Sections *****/
 
+.info-box {
+    background-color: #BFEFFF;
+    padding: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
 /* Blog */
 .hentry {
 	display: block;
