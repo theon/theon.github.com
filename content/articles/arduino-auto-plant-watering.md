@@ -16,7 +16,7 @@ So... I've plugged my chilli plant into the internet. Every minute it will repor
 
 The x-axis is time - one pixel per 5 minutes. The y-axis is moisture level in an arbitrary unit - the number is actually a reading of one of the arduino's analogue pins which has 10 bits of resolution, so it has the theoretical range of `0` - `1023`. Saying that if the chart ever reads `0`, then my chilli has either been long dead, or I have hi-jacked the arduino for my next project. A normal reading should be somewhere in the range of `400` - `800`.
 
-_*Update 2012-11-05:* The Arduino Plant Watering system has been shut down for now. It did it's job, I got some tasty chillis and now I need the arduino for the next project. Here's a couple images of what the charts to give you an idea what the did looks like. They were lovely interactive HTML5 canvas elements originally - trust me ;) Check out this [git repo](https://github.com/theon/auto-watering-system) for the code_
+_*Update 2012-11-05:* The Arduino Plant Watering system has been shut down for now. It did it's job, I got some tasty chillis and now I need the arduino for the next project. Here's a couple images of what the charts to give you an idea what the did looks like. Originally they were lovely interactive HTML5 canvas charts with axes - trust me ;) Check out this [git repo](https://github.com/theon/auto-watering-system) for the code_
 
 <script type="text/javascript" src="http://theon.github.com/theme/posts/arduino-plant-watering/d3.v2.js"></script>
 <script type="text/javascript" src="http://theon.github.com/theme/posts/arduino-plant-watering/cubism.v1.js"></script>
@@ -105,7 +105,7 @@ _*Update 2012-11-05:* The Arduino Plant Watering system has been shut down for n
     </script>
 </div>
 <div id="moisture-time-series" class="time-series">
-    <img src="https://lh4.googleusercontent.com/-8g9QT7BtC_8/UJ6bj0Ran4I/AAAAAAAACpY/v11u4YmsWm4/s800/moisture-chart.png" />
+    <img src="https://lh6.googleusercontent.com/-qEJSp9LKSpM/UJ_ZQabJ_CI/AAAAAAAACqE/BtrE6qUvVTc/s800/moisture-chart.png" />
 </div>
 This data is really useful. I have a tendency to over-water plants and this chart would tell me when the soil was dry enough to warrant a watering. Sometimes the soil would look really dry on the surface, but the chart would indicate a lot of moisture beneath the surface. But seeing as the the arduino now already knows how moist the soil is, the next step was to get the plant to water itself and take my over-watering habits out of the equation all together. So that's what I did. Once the moisture hits a certain threshold, the arduino waters the chilli. At the moment I am using a threshold of <s>`525`</s> <s>`425`</s> `450` which is the red line on the above chart. The below chart indicates events when the chilli has decided to water itself. 
 
