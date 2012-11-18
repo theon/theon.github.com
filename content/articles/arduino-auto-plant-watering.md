@@ -18,7 +18,7 @@ The x-axis is time - one pixel per 5 minutes. The y-axis is moisture level in an
 
 <p class="info-box">
     <strong>Update 2012-11-05:</strong> 
-    <em>The Arduino Plant Watering system has been turned off for now, so there are no live charts anymore. The system did it's job, I got some tasty chillis and now I need the arduino for the next project. Instead of the live charts, here's a couple of images to give you an idea of what the live charts looked like. Originally they were lovely interactive HTML5 canvas charts with axes - trust me ;) Check out this [git repo](https://github.com/theon/auto-watering-system) for the code behind the live charts.</em>
+    <em>The Arduino Plant Watering system has been turned off for now, so there are no live charts anymore. The system did it's job, I got some tasty chillis and now I need the arduino for the next project. Instead of the live charts, here's a couple of images to give you an idea of what the live charts looked like. Originally they were lovely interactive HTML5 canvas charts with axes - trust me ;) Check out this <a href="https://github.com/theon/auto-watering-system">git repo</a> for the code behind the live charts.</em>
 </p>
 
 <script type="text/javascript" src="http://theon.github.com/theme/posts/arduino-plant-watering/d3.v2.js"></script>
