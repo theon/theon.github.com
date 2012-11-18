@@ -58,35 +58,6 @@
         </header><!-- /#banner -->
         {% block content %}
         {% endblock %}
-        <section id="extras" class="body">
-        {% if LINKS %}
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                        {% for name, link in LINKS %}
-                            <li><a href="{{ link }}">{{ name }}</a></li>
-                        {% endfor %}
-                        </ul>
-                </div><!-- /.blogroll -->
-        {% endif %}
-<!--
-        {% if SOCIAL %}
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="{{ SITEURL }}/{{ FEED }}" rel="alternate">atom feed</a></li>
-                            {% if FEED_RSS %}
-                            <li><a href="{{ SITEURL }}/{{ FEED_RSS }}" rel="alternate">rss feed</a></li>
-                            {% endif %}
-
-                        {% for name, link in SOCIAL %}
-                            <li><a href="{{ link }}">{{ name }}</a></li>
-                        {% endfor %}
-                        </ul>
-                </div>
-        {% endif %}
--->
-        </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body">
             <address id="about" class="vcard">
