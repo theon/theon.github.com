@@ -39,6 +39,7 @@ GOOGLE_ANALYTICS = 'UA-30513668-1'
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATS_ON_MENU = False
 MENUITEMS = (('Home', '/'),
+             ('Archive', '/archives.html'),
 #	         ('Todo', '/pages/todo.html'),
              ('About', '/pages/about.html'))
 
