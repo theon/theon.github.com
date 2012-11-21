@@ -18,6 +18,7 @@ I know there are counter benefits to using dynamically typed languages and one o
 
 Scala strikes a nice balance in this regard. Declaring variables is concise as you need not declare the type:
 
+    :::scala
     val animal = "Cat"
     
 Despite the lack of a type, Scala is a statically typed language. Functions _must_ declare their argument and return types and this is why is the type declaration is optional for variables - no matter what you are assigning to your variable, Scala can infer the variable type (note: if you are only declaring a variable and not assigning anything to it, you must specify the type).
@@ -28,6 +29,7 @@ Scala is succinct is many other ways, which leads be to....
 
 Case classes are the Scala equivalent of Java POJOs - objects you use to hold state and often don't do a whole lot else. The difference is that Scala case classes don't have all the boilerplate cruft of Java POJOs. Here is a case class in Scala:
 
+    :::scala
     case class Animal(type:String, sound:String)
 
 If you omit the `case` keyword you'd have a standard scala class, but the presence of the `case` keyword auto-magically gives the class these benefits for free:
@@ -41,10 +43,12 @@ If you omit the `case` keyword you'd have a standard scala class, but the presen
 
 Note how only getter methods are generated, not setter methods. This is because Scala promotes the use of immutable objects (hence the copy method), however if you do want to create a mutable case class with setters as well as getters, you can use the `var` keyword:
 
-     case class Animal(var kind:String, var sound:String)
+    :::scala
+    case class Animal(var kind:String, var sound:String)
 
 Pattern matching is a nice language feature in Scala. It allows you to use instances of your case classes along with wildcards in switch style statements:
 
+    :::scala
     val bingo = Animal("Dog", "Woof");
     bingo match {
         case Animal(_, "Chirp") => println("This is an animal that chirps")
@@ -56,18 +60,21 @@ Pattern matching is a nice language feature in Scala. It allows you to use insta
 
 For constructor and method arguments you can specify defaults:
 
+    :::scala
     > class Animal(kind:String, sound:String="Woof")
     > new Animal("Dog")
     res1: Animal = Animal(Dog,Woof)
 
 You can also use similar syntax when calling a constructor or method to reference arguments by name, rather than position:
 
+    :::scala
     > val cat = new Animal(kind="Cat", sound="Meow")
     cat: Animal = Animal(Cat,Meow)
 
 
 This comes in useful when you have many default arguments and need to highlight which arguments you want to specify.
 
+    :::scala
     > val tiger = cat.copy(sound="Roar!")
     tiger: Animal = Animal(Cat,Roar!)
 
@@ -75,6 +82,7 @@ This comes in useful when you have many default arguments and need to highlight 
 
 You can do some really nice things with the core collections framework. It's like the Guava, the Java library, but with nicer syntax. There is too much goodness to show here, but here are a few things you can do:
 
+    :::scala
     > val animals = List(
         Animal("Cat"),
         Animal("Dog"),

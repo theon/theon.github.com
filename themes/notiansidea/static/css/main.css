@@ -99,7 +99,16 @@ dl {margin: 0 0 1.5em 0;}
 dt {font-weight: bold;}
 dd {margin-left: 1.5em;}
 
-pre{background-color: #000; padding: 10px; color: #fff; margin: 10px; overflow: auto;}
+pre{
+	background-color: #FFC; 
+	padding: 10px; 
+	color: #666; 
+	margin: 10px; 
+	overflow: auto; 
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
 
 /* Quotes */
 blockquote {

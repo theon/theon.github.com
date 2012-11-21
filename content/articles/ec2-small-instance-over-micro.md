@@ -8,6 +8,7 @@ A few months ago I wrote a [blog post](http://theon.github.com/amazon-ec2-gotcha
 
 The first thing I noticed was that the terminal was a bit sluggish, so I ran `top` and on the first line saw this:
 
+    :::console
     load average: 44.17, 35.29, 31.24
     
 Ok... that's looking a little on the high side...  This was a pretty lightweight web app that had been running fine on a micro instance for about a year with a fairly low load average. Why the drastic increase in CPU usage?
@@ -17,6 +18,7 @@ Next I figured it may be something dodgy in my code and that bouncing the server
 
 I ran `top` again and noticed on the third line down that CPU usage was actually only around 2%. `st` was at over 97%.
 
+    :::console
     Cpu(s):  1.8%us,  0.5%sy,  0.0%ni, 0.0%id,  0.0%wa,  0.0%hi,  0.0%si,  97.7%st
 
 I had no idea what `st` was, so broke out some googlefu and found a whole bunch of [useful blog posts](http://gregsramblings.com/2011/02/07/amazon-ec2-micro-instance-cpu-steal/). The `st` stands for 'steal time' and indicates the amount of CPU throttling EC2 is doing. 

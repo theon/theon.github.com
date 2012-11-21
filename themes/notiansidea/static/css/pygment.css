@@ -5,11 +5,11 @@ background-color:#FFFFCC;
 border:1px solid #FF0000;
 }
 .k {
-color:#007020;
+color:#000080;
 font-weight:bold;
 }
 .o {
-color:#666666;
+color:#000000;
 }
 .cm {
 color:#408090;
@@ -85,7 +85,11 @@ color:#902000;
 color:#208050;
 }
 .s {
-color:#4070A0;
+color:#008000;
+font-weight: bold;
+}
+.n {
+color:#000000;
 }
 .na {
 color:#4070A0;
