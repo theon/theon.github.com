@@ -21,9 +21,9 @@ Scala strikes a nice balance in this regard. Declaring variables is concise as y
     :::scala
     val animal = "Cat"
     
-Despite the lack of a type, Scala is a statically typed language. Functions _must_ declare their argument and return types and this is why is the type declaration is optional for variables - no matter what you are assigning to your variable, Scala can infer the variable type (note: if you are only declaring a variable and not assigning anything to it, you must specify the type).
+Despite the lack of a type, Scala is a statically typed language. Functions _must_ declare their argument types, but for most other situations Scala can infer type (variable declarations, function return types, etc). There are some situations when this is not true, for example, if you are only declaring a variable and not assigning anything to it, you must specify the type. Also some overloaded and recursive functions must declare a return type, but for the most part Scala's type inference keeps your code nice and concise.
 
-Scala is succinct is many other ways, which leads be to....
+Scala is also succinct is many other ways, which leads be to....
 
 # 2. Case classes
 
