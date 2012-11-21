@@ -52,8 +52,8 @@ Pattern matching is a nice language feature in Scala. It allows you to use insta
     val bingo = Animal("Dog", "Woof");
     bingo match {
         case Animal(_, "Chirp") => println("This is an animal that chirps")
+        case Reptile(_, sound) =>  println("This is a animal of subtype Reptile which makes the sound: " + sound)
         case Animal(_, _) =>  println("This is any animal")
-        case Reptile(_, _) =>  println("This is a animal of subtype Reptile")
     }
 
 # 3. Named and Default Arguments
