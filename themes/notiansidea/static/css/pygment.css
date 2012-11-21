@@ -19,7 +19,7 @@ font-style:italic;
 color:#007020;
 }
 .c1 {
-color:#408090;
+color:#808080;
 font-style:italic;
 }
 .cs {
@@ -79,7 +79,7 @@ color:#007020;
 font-weight:bold;
 }
 .kt {
-color:#902000;
+color:#000000;
 }
 .m {
 color:#208050;
@@ -98,8 +98,7 @@ color:#4070A0;
 color:#007020;
 }
 .nc {
-color:#0E84B5;
-font-weight:bold;
+color:#000000;
 }
 .no {
 color:#60ADD5;
