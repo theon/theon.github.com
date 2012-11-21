@@ -8,6 +8,7 @@ The other day I was looking for a Java or Scala library to help me parse a URL (
 
 So I spent this weekend putting together a Scala library to fit that niche. The full details are on this [github page](https://github.com/theon/scala-uri), but here is a quick example of how you build a URL with it:
 
+    :::scala
     val uri = "http://theon.github.com" ? ("param1" -> "1") & ("param2" -> "2")
 
 Version 0.1 is now available in the Sonatype OSS Maven repository and should get synced to Maven Central soon. Check the [github page](https://github.com/theon/scala-uri) for more details.
