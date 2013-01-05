@@ -1,4 +1,4 @@
-Date: 2012-01-05
+Date: 2013-01-05
 Title: scala-uri 0.2 Released
 Tags: scala-uri, scala, url, uri, dsl
 Category: Posts
