@@ -32,7 +32,7 @@ Select the 'Classic Wizard' option and click the 'Continue' button.
     <img src="https://lh3.googleusercontent.com/-65uv6eOmFtY/UPMT__agAvI/AAAAAAAACsE/xh3h5gOWgro/s800/choose-classic-wizard.png" />
 </div>
 
-The next screen shows you the AMIs available for you to. AMIs are the starting blueprints for our server. They contain the operating system (and sometimes other software) that you server will be using. The options with the star symbol are those that qualify for the one year free tier. We will be using the Ubuntu Server 64 bit AMI which does qualify for the free tier. I'll be using version 12.04.1 LTS, but other versions should also be fine for this tutorial.
+The next screen shows you the AMIs available for you to. AMIs are the starting blueprints for our server. They contain the operating system (and sometimes other software) that your server will be using. The options with the star symbol are those that qualify for the one year free tier. We will be using the Ubuntu Server 64 bit AMI which does qualify for the free tier. I'll be using version 12.04.1 LTS, but other versions should also be fine for this tutorial.
 
 <div class="central-section">
     <img src="https://lh5.googleusercontent.com/-tSIjke2VslU/UPMUEBvNUEI/AAAAAAAACtU/BPDFbHgTasc/s720/pick-ami.png" />
