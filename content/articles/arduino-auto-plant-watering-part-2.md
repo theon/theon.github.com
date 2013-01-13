@@ -5,21 +5,23 @@ Category: Posts
 Author: Ian Forsey
 Status: draft
 
-Tim [commented](http://theon.github.com/plant-watering-with-arduino.html#comment-765207048) on my recent [blog post](http://theon.github.com/plant-watering-with-arduino.html) about my automated plant watering system asked me to go into some more detail about the steps I went though to set up the software side of the project. The project used [cube](https://github.com/square/cube) and [cubism](https://github.com/square/cubism) to make live charts of my chilli plant's moisture levels available over the Internet. In this post I will go though a step-by-step guide explaining how I set up this software. This article assumes no previous knowledge of server administration or software development, but I have thrown it together faily quickly, so if anything below is unclear post a comment below and I will try to update the article.
+Tim [commented](http://theon.github.com/plant-watering-with-arduino.html#comment-765207048) on my recent [blog post](http://theon.github.com/plant-watering-with-arduino.html) about my automated plant watering system and asked if I could go into some more detail about the steps I went though to set up the software side of the project. The project used [cube](https://github.com/square/cube) and [cubism](https://github.com/square/cubism) to make live charts of my chilli plant's moisture levels available over the Internet. In this post I will go though a step-by-step guide explaining how I set up the software that powered these charts. I've tried to make no assumptions of the readers' previous knowledge of server administration or software development, but I have thrown it together faily quickly, so if anything below is unclear, then do post a comment below and I will try to update the article.
 
 # Launching an Amazon EC2 Server
 
-To make the project available over the Internet, I used Amazon EC2 to provision a server which is [free for one year](http://aws.amazon.com/free/).
+To make the project available over the Internet, I used Amazon EC2 to provision a server which is [free for one year](http://aws.amazon.com/free/). The first step is to register at [Amazon AWS](http://aws.amazon.com/) and log into the AWS Management Console and click the 'EC2' button:
 
-The first step is to register at [Amazon AWS](http://aws.amazon.com/) and log into the AWS Management Console and click the Amazon EC2 button ![EC2 Button](https://lh5.googleusercontent.com/-IAlhwNYCJBE/UPMUCd5UmZI/AAAAAAAACs0/UA7u1P1CKxY/s187/ec2-button.png)
+<div class="central-section">
+    <img src="https://lh5.googleusercontent.com/-IAlhwNYCJBE/UPMUCd5UmZI/AAAAAAAACs0/UA7u1P1CKxY/s187/ec2-button.png" />
+</div>
 
-Now select the region where you would like you server to run from the drop down menu next to your name in the top right corner of the screen. I live in the England, so I will be using the EU (Ireland) region as it is closest to me so will likely give me the best network connection.
+Now, select from the drop down menu next to your name (top right corner), the region where you would like your server to live. I'm based in the England, so I will be using the EU (Ireland) region as it is closest to me and therefore will likely give me the best network performance.
 
 <div class="central-section">
     <img src="https://lh5.googleusercontent.com/-zeK-UerURH8/UPMUFFMtgZI/AAAAAAAACto/FcSRh7h6j8I/s327/select-region.png" />
 </div>
 
-On the current page, you should see a 'Getting Started' with a 'Launch Instance' button. Click this to start the wizard that will walk us through creating our server. Alternatively you can start this wizard by clicking the 'Instances' button on the left hand menu and then clicking the 'Launch Instance' button.
+On the homepage of the AWS Management Console, you should see a 'Getting Started' section with a 'Launch Instance' button. Click this to start a wizard that will walk us through creating our server. Alternatively you can start this wizard by clicking the 'Instances' button on the left hand menu and then clicking the 'Launch Instance' button.
 
 <div class="central-section">
     <img src="https://lh6.googleusercontent.com/-64oRrSyCE0k/UPMUD0D37yI/AAAAAAAACtE/PplX6NStex8/s535/launch-ec2-instance.png" />
@@ -31,7 +33,7 @@ Select the 'Classic Wizard' option and click the 'Continue' button.
     <img src="https://lh3.googleusercontent.com/-65uv6eOmFtY/UPMT__agAvI/AAAAAAAACsE/xh3h5gOWgro/s800/choose-classic-wizard.png" />
 </div>
 
-The next screen shows you the AMIs available for you to. AMIs are images that contain the operating system (and sometimes other software) that you server will be using. The options with the star symbol are those that qualify under the one year free tier. We will be using the Ubuntu Server 64 bit AMI which does qualify for the free tier. I'll be using the 12.04.1 LTS, but other versions should be fine for this tutorial.
+The next screen shows you the AMIs available for you to. AMIs are the starting blueprints for our server. They contain the operating system (and sometimes other software) that you server will be using. The options with the star symbol are those that qualify for the one year free tier. We will be using the Ubuntu Server 64 bit AMI which does qualify for the free tier. I'll be using version 12.04.1 LTS, but other versions should also be fine for this tutorial.
 
 <div class="central-section">
     <img src="https://lh5.googleusercontent.com/-tSIjke2VslU/UPMUEBvNUEI/AAAAAAAACtU/BPDFbHgTasc/s720/pick-ami.png" />
@@ -41,7 +43,7 @@ On the next screen, the defaults should be fine:
 
   * **Number of Instances** set to '1'
   * **Instance Type** set to 'T1 Micro'. T1 Micro instances are the only size available under the Amazon free tier
-  * **Launch Info** set to the EC2 tab with an **Availability Zone** of No 'Preference'
+  * **Launch Info** set to the EC2 tab with an **Availability Zone** of 'No Preference'
 
 <div class="central-section">
     <img src="https://lh4.googleusercontent.com/-HBnSs5ZJCJg/UPMUAP0cZDI/AAAAAAAACsA/_6To_3ncVA8/s720/choose-instance-type.png" />
@@ -49,13 +51,13 @@ On the next screen, the defaults should be fine:
 
 Click 'Continue'.
 
-On the next screen most of defaults should be fine, the only thing I change is turning on 'Termination Protection'. This prevents you accidentally Terminating your server. For more info, see my [blog post](http://techblog.net-a-porter.com/2012/11/amazon-ec2-for-small-development-teams/) over at the Net-a-Porter Tech Blog. Once you have checked the 'Termination Protection' checkbox, click 'Continue'.
+On the next screen most of defaults should be fine, the only thing I change is that I turn on 'Termination Protection'. This prevents you accidentally Terminating your server. For more details about this, see my [blog post](http://techblog.net-a-porter.com/2012/11/amazon-ec2-for-small-development-teams/) over at the Net-a-Porter Tech Blog. Once you have checked the 'Termination Protection' checkbox, click 'Continue'.
 
 <div class="central-section">
     <img src="https://lh4.googleusercontent.com/-6YDW6ubKZe0/UPMUGbgvSVI/AAAAAAAACt4/dRReXomI9wI/s720/turn-on-term-protection.png" />
 </div>
 
-The next screen details the EBS volume with acts as the Hard Disk for your server. The defaults are fine. Click 'Continue'.
+The next screen lists the EBS volume we will be using. This EBS volume will act as the Hard Disk for your server and the defaults are fine. Click 'Continue'.
 
 <div class="central-section">
     <img src="https://lh4.googleusercontent.com/-LWHs6ccGkXo/UPMUCG4MHMI/AAAAAAAACsc/yTeE9ohX8ZE/s720/ebs-settings.png" />
@@ -75,8 +77,8 @@ On the next screen you will create a key pair for your server. Enter a name (I'm
 
 On the next screen we will configure the firewall. Click the 'Create New Security Group' tab and enter the group name and description as 'plant-watering-server'. We are going to add two rules to the filewall:
 
-  * Custom TCP Rule, Port Range: 80, Source 0.0.0.0/0. This rule will allow anyone to read data from our Cube Server. Later we will add some security measures to ensure only our plant can write data into the cube server.
-  * Custom TCP Rule, Port Range: 80, Source 0.0.0.0/0. This will allow us to log in (via SSH) and administrate our server.
+  * Custom TCP Rule, Port Range: 80, Source 0.0.0.0/0. This rule will allow anyone to read data from our Cube Server. Later we will add some security measures to ensure only our Arduino can write data into the cube server.
+  * Custom TCP Rule, Port Range: 22, Source 0.0.0.0/0. This will allow us to log in (via SSH) and administrate our server.
 
 Once you have the two rules added, the screen should look like this:
 
@@ -84,7 +86,7 @@ Once you have the two rules added, the screen should look like this:
     <img src="https://lh4.googleusercontent.com/-aBOghuv1Vz8/UPMUC9AhpYI/AAAAAAAACs4/EuPORmOUhgA/s720/firewall-settings.png" />
 </div>
 
-Click 'Continue' to bring up the review page and then click 'Launch' to launch your server!
+Click 'Continue' to bring up the review page and then click 'Launch' to start your server!
 
 We will want to reserve a static IP address for our server, so its IP address doesn't change every time we restart it. To do this click the 'Elastic IPs' item on the left hand menu and click the 'Allocate New Address' button. A confirmation dialog pops up; click the 'Yes, Allocate' button. 
 
@@ -106,7 +108,7 @@ On the dialog that appears, select your server from the drop down menu and click
 
 Before we leave this page, take a note of the IP address (four numbers seperated by dots) as we will need it later to log in and administrate our server.
 
-If you now click the 'Instances' button of the left hand menu, you should see you instance with a state of 'running' and green light. On the bottom pane, if you scroll down to Elastic IP, you should see the IP address you noted down earlier. Now the server is running, we can log in and install the software we need.
+If you now click the 'Instances' button of the left hand menu, you should see you instance with a state of 'running' and green light. On the bottom pane, if you scroll down to Elastic IP, you should see the IP address you noted down earlier. Now that the server is running, we can log in and install the software we need.
 
 # SSHing into the server
 
@@ -118,7 +120,7 @@ We are going to SSH into our server to install cube. The way to achieve this wil
 
 You may get asked if you would like to continue because the authenticity of your server cannot be established. Type `yes` and hit enter.
 
- You may get the following error if on a Mac:
+ You may also get the following error:
 
     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
@@ -151,15 +153,15 @@ SSHing into your server from a windows computer involves a little more work. Fol
 
 # Installing the software we need
 
-Cube requires a couple pieces of software in order to function. We are going to install this software via aptitude. First ensure that aptitude list of repositories is up to date by running this command
+Cube requires a couple pieces of software in order to function. We are going to install this software via a package manager called aptitude. First ensure that aptitude's list of repositories is up to date by running this command
 
     sudo apt-get update
 
-Eventually you should see the output `Reading package lists... Done`. Now we can start installing software.
+Once this command has finished running, we can start installing software.
 
 ## MongoDB
 
-Cube uses a piece of software called MongoDB as it's database. In our case this database will store all the moisture records from our plant. To install MongoDB, run this command. When prompted if you wish to continue type 'y' and hit return.
+Cube uses a piece of software called MongoDB to build it's database. In our case this database will store all the moisture records from our plant. To install MongoDB, run this command. When asked if you wish to continue type 'y' and hit return.
 
     sudo apt-get install mongodb mongodb-server
 
@@ -173,7 +175,7 @@ And you should see output similar to:
 
 ## node.js
 
-Cube is written in a programming language called JavaScript and node.js is a piece of software that can run JavaScript programs. To install it run the following command, hitting enter and typing 'y' when prompted to in order to continue.
+Cube is written in a programming language called JavaScript and node.js is a piece of software that can run JavaScript programs. To install it run the following command, hitting enter and typing 'y' when prompted to.
 
     sudo apt-get install python-software-properties
     sudo add-apt-repository ppa:chris-lea/node.js
@@ -215,7 +217,7 @@ If you ever need to stop the cube server, you can run this command.
 
     pkill -9 node
 
-Test out the pkill command now and then rerun the two commands to start the cube server. Run the `cat` command to view the logs again and you should now see the cube server has started up a second time. In this instance, I first started the cuber server at 17:37, then stopped it and started it again at 17:43.
+Test out the pkill command now and then re-run the two commands to start the cube server. Run the `cat` command to view the logs again and you should now see the cube server has started up again. In this instance, I first started the cube server at 17:37, then stopped it and started it again at 17:43.
 
     13 Jan 17:37:45 - starting mongodb client
     13 Jan 17:37:45 - starting http server on port 1080
@@ -228,11 +230,10 @@ Test out the pkill command now and then rerun the two commands to start the cube
 
 Cube servers aren't designed to be made public facing (see the For Internal Use Only section on [this page](https://github.com/square/cube/wiki)) and out of the box it would allow anyone on the Internet to add moisture readings into the cube server. Because we only want our plant to write moisture readings, we will use a piece of software called node http-proxy and a little script I wrote to add some basic password protection.
 
-<div>
-    This security is really primitive. It will stop majority of people writing crap into your database, but without SSL running, it is still prone to network sniffing attacks. This tutorial won't explain how to set up SSL - for a small plant watering arduino project it is probably not worth the effort, but be aware that this security is far from watertight without SSL.
-
-    Do not use a password you use for other websites in the steps below.
-</div>
+<p class="info-box">
+    <strong>Important - </strong> 
+    <em>This security is primitive, but will suffice for a hobby project as it will stop most attackers writing crap into your database. Despite this, be aware that without SSL running, your cube server is still prone to network sniffing attacks and therefore <strong>DO NOT</strong> use a password you use for other websites in the steps below.</em>
+</p>
 
     mkdir -p ~/cube-proxy
     cd ~/cube-proxy
@@ -243,7 +244,7 @@ Now to set your password run this command, but change elephants to your password
 
     sed -i 's/change_this_password/elephants/g' ~/cube-proxy/cube-proxy.js
 
-If you every need to change your password, run the following, again replacing elephants with your password:
+If you ever need to change your password, run the following, again replacing elephants with your password:
 
     cd ~/cube-proxy
     rm cube-proxy.js
@@ -258,7 +259,7 @@ To run this node proxy, run the following command:
 
 So now our cube server is up and running, we can give it a test run.
 
-On your computer, install Chrome with the [postman chrome extension](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en). To pull some data out of the cube server, load up postman, and in the textbox that says 'Enter Request URL here', enter the following URL, but replacing `54.247.0.0` with your Elastic IP Address you noted down earlier.
+On your computer, install Chrome and the [postman chrome extension](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en). To pull some data out of the cube server, load up postman, and in the textbox that says 'Enter Request URL here', enter the following URL, but replacing `54.247.0.0` with your Elastic IP Address that you noted down earlier.
 
     http://54.247.0.0/1.0/metric/get?expression=sum(moisture(moisture))&step=3e5&limit=3
 
@@ -328,17 +329,17 @@ Paste the HTML in [this gist](https://gist.github.com/4525788) into a text edito
     <img src="https://lh3.googleusercontent.com/-KsE6lfhuD7U/UPMUBpClfYI/AAAAAAAACsg/IWz8KOMumUs/s800/cusbism-in-browser.png" />
 </div>
 
-This HTML can be hosted on server on the Internet. One of the easiest ways to get it hosted somewhere with a friendly URL is to put it on a [tumblr](http://www.tumblr.com/) account. To do this:
+This HTML can be hosted on the Internet. One of the easiest ways to get it hosted with a friendly URL is to put it on a [tumblr](http://www.tumblr.com/) blog. To do this:
 
  * Register a blog at [http://www.tumblr.com](http://www.tumblr.com) and pick a tumblr URL.
  * Go to the settings page by clicking the cog icon ![tumblr cog icon](https://lh5.googleusercontent.com/-YdzYp_wYgYs/UPMUFQUca9I/AAAAAAAACtg/zdQNnDUf03Y/s32/tumblr-cog-icon.png)
  * Click the name of you blog at the bottom of the menu on the left hand side
  * Click the 'Customize' button under the 'Theme' section
  * Click the 'Edit HTML' button
- * Replace the all the existing HTML with your HTML in your graph.html file
- * Click 'Update Preview'. You should see you charts in the right hand pane. 
+ * Replace the all the existing HTML with the HTML in your graph.html file
+ * Click 'Update Preview'. You should see you charts in the right hand pane
  * Click the 'Apperance' button and click the 'Save' button
- * Your chart should now be available at your tumblr URL.
+ * Your chart should now be available at your tumblr URL
 
 <div class="central-section">
     <img src="https://lh4.googleusercontent.com/-KP4spCElrSY/UPMUH09xhPI/AAAAAAAACuI/HpveiSQau0w/s800/tumblr-preview.png" />
@@ -346,14 +347,14 @@ This HTML can be hosted on server on the Internet. One of the easiest ways to ge
 
 # Arduino
 
-We now have the chart hosted at tumblr.com, however we are not writing data to it. To do this we will need to add some code to our arduino program.
+We now have the chart hosted at tumblr.com, however our Arduino is not writing data to it. To do this we will need to add some code to our Aduino program.
 
-The Arduino code I used is available [here](https://github.com/theon/auto-watering-system/blob/master/arduino/auto-watering.ino). There are two important lines to change in the file:
+The Arduino code I used is available [here](https://github.com/theon/auto-watering-system/blob/master/arduino/auto-watering.ino). There are two important things to change in the file:
 
  * Change the cube server IP on line `38` to your cube servers Elastic IP.
  * Change the password on line `172` to your cube password you setup earlier in this tutorial.
 
-You may also need to change the Local IP settings at the top of the file to match the settings configured by your router. On you computer run `ifconfig` (OSX/Linux) or `ipconfig` (Windows) to get an idea of what these settings should be.
+You may also need to change the Local IP settings at the top of the file to match the settings for your router. On your computer run `ifconfig` (in a terminal on OSX/Linux) or `ipconfig` (in `Start > Run > cmd` for Windows) to get an idea of what these settings should be.
 
 The code relies on two Arduino libraries:
 
