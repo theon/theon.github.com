@@ -178,3 +178,8 @@ Below is the circuit diagram for driving the solenoid valve. My electronics know
 This project required very little server-side programming. I used [cube](http://square.github.com/cube/) to store the time-series moisture and watering event data, which uses node.js and mongodb under the hood. As mentioned in their docs, _Cube is designed for internal use only_ so I added a simple proxy using [node-http-proxy](https://github.com/nodejitsu/node-http-proxy) to lock down write access to the cube server - after all, I don't want anyone hacking my chilli plant! Cube exposes a RESTful API which my arduino could happily talk thanks to the [aJson](https://github.com/interactive-matter/aJson) library. All I had to do was deploy this lot onto a Amazon EC2 instance and the server-side work was done.
 
 For the frontend visualisation I used the [cubism](http://square.github.com/cubism/) JavaScript library which seamlessly integrates with cube. The arduino and cubism code can be found in [this github repo](https://github.com/theon/auto-watering-system) - comments/questions/criticism of the code welcome.
+
+<p class="info-box">
+    <strong>Update 2012-01-13:</strong> 
+    <em>I have written a <a href="http://theon.github.com/plant-watering-with-arduino-part-2.html">part 2 blog post</a> which goes into much further detail around how to set up the software for this project. Check it out!</em>
+</p>
