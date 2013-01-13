@@ -107,7 +107,7 @@ On the dialog that appears, select your server from the drop down menu and click
 
 Before we leave this page, take a note of the IP address (four numbers seperated by dots) as we will need it later to log in and administrate our server.
 
-If you now click the 'Instances' button of the left hand menu, you should see you instance with a state of 'running' and green light. On the bottom pane, if you scroll down to Elastic IP, you should see the IP address you noted down earlier. Now that the server is running, we can log in and install the software we need.
+If you now click the 'Instances' button of the left hand menu, you should see your instance with a state of 'running' and green light. On the bottom pane, if you scroll down to Elastic IP, you should see the IP address you noted down earlier. Now that the server is running, we can log in and install the software we need.
 
 # SSHing into the server
 
