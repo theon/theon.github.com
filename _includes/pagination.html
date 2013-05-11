@@ -1,7 +1,7 @@
 <p class="paginator">
 
     {% if paginator.page == 2 %}
-        <a href="/">&laquo;</a>
+        <a href="/#paging">&laquo;</a>
     {% else %}
         {% if paginator.previous_page %}
             <a href="/page{{ paginator.previous_page }}">&laquo;</a>
