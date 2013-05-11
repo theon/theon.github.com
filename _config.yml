@@ -1,7 +1,7 @@
 name: Just Some Dev
 description: Just some dev, blogging about programming
 author: Ian Forsey
-url: http://theon.github.io/blog
+url: http://theon.github.io
 permalink: /:title.html
 pygments: true
 paginate: 10
