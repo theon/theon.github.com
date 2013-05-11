@@ -39,6 +39,17 @@ layout: base
             </script>
         </div>
     {% endif %}
-
 </article>
 </section>
+
+{% if site.related_posts %}
+<section class="content body">
+    <h1>Related Posts</h1>
+    <hr />
+    <ol id="posts-list" class="hfeed">
+        {% for page in site.related_posts %}
+        {% include article_infos.html %}
+        {% endfor %}
+    </ol>
+</section>
+{% endif %}
