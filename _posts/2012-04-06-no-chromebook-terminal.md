@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: post
 date: 2012-04-06
 title: Lost your Chromebook terminal?
 tags: [chromebook, chrome os]

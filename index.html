@@ -1,15 +1,15 @@
-----
+---
 layout: base
 ---
 
 {% for page in paginator.posts limit:1 offset:0 %}
     <aside id="featured" class="body">
         <article>
-            {% include 'article_infos_basic_read_later.html' %}
-            <h1 class="entry-title"><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></h1>
+            {% include article_infos_basic_read_later.html %}
+            <h1 class="entry-title"><a href="{{ site.url }}/{{ page.url }}">{{ page.title }}</a></h1>
             {{ page.content }}
-            {% include 'taglist.html' %}
-            {% include 'comments.html' %}
+            {% include taglist.html %}
+            {% include comments.html %}
         </article>
 
 
@@ -21,13 +21,13 @@ layout: base
     <hr />
     <ol id="posts-list" class="hfeed">
 
-    {% include 'pagination.html' %}
+    {% include pagination.html %}
 
     {% for post in paginator.posts offset:1 %}
-        {% include 'recent_article_infos.html' %}
+        {% include article_infos.html %}
     {% endfor %}
 
-    {% include 'pagination.html' %}
+    {% include pagination.html %}
 
     </ol>
 </section>

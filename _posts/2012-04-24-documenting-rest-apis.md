@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: post
 date: 2012-04-24
 title: Documenting the JSON Schema of your Rest APIs
 tags: [rest, api, iodocs, mashery, nodejs]

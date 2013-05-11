@@ -1,8 +1,8 @@
 ---
-layout: base
+layout: post
 date: 2012-10-26
 title: Repurposing My Old Android
-tags: [android, gps, hack, cyanogenmod, adw.l]
+tags: [android, gps, hack, cyanogenmod, adwl]
 category: Posts
 author: Ian Forsey
 ---

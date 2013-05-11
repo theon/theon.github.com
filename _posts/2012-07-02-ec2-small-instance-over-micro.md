@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: post
 date: 2012-07-02
 title: You May Want to Drop that EC2 Micro Instance
 tags: [amazon ec2]

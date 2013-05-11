@@ -1,7 +1,9 @@
-auto: true
-server: true
+name: Just Some Dev
+description: Just some dev, blogging about programming
+author: Ian Forsey
+url: http://theon.github.io/blog/
 permalink: /:title.html
-feed:
- url: http://theon.github.io
- name: Just Some Dev
 pygments: true
+exclude: [themes]
+disqus_sitename: justsomedev
+google_analytics: UA-30513668-1

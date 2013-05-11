@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: post
 date: 2013-01-13
 title: Plant Watering with Arduino - Part 2
 tags: [arduino, hack, cube, cubism, nodejs, amazon ec2]

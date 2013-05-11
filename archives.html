@@ -1,14 +1,14 @@
-----
+---
 layout: base
 ---
 
 <section id="content" class="body">
-<h1>Archives for {{ SITENAME }}</h1>
+<h1>Archives for {{ site.name }}</h1>
 
 <dl>
-{% for article in dates %}
-    <dt>{{ page.date }}</dt>
-    <dd><a href='{{ page.url }}'>{{ page.title }}</a></dd>
+{% for post in site.posts %}
+    <dt>{{ post.date }}</dt>
+    <dd><a href='{{ post.url }}'>{{ post.title }}</a></dd>
 {% endfor %}
 </dl>
 </section>

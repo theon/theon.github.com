@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: post
 date: 2012-10-31
 title: Mac OSX NTLM Proxy Setup
 tags: [osx, ntlm, proxy]

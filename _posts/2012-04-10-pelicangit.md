@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: post
 date: 2012-04-10
 title: Powering your Blog with Pelican and Git
 tags: [pelicangit, pelican, git, github, amazon ec2, cloud9 ide]

@@ -1,0 +1,31 @@
+<li>
+    <article class="hentry">
+        <header>
+            <h1>
+                <a href="{{ site.url }}/{{ page.url }}" rel="bookmark" title="Permalink to {{ page.title }}">
+                    {{ page.title }}
+                </a>
+            </h1>
+        </header>
+
+        <div class="entry-content">
+
+            <footer class="post-info">
+                <h2 class="published" title="{{ page.date }}">
+                    {{ page.date }}
+                </h2>
+            </footer>
+
+            {{ page.excerpt }}
+            <div class="readmore">
+                <a href="http://www.instapaper.com/hello2?url={{ site.url }}/{{ page.url }}&title={{ page.title }}">read
+                    later</a>
+                &nbsp;|&nbsp;
+                <a href="{{ SITEURL }}/{{ page.url }}">read now</a>
+            </div>
+            {% include taglist.html %}
+            {% include comments.html %}
+        </div>
+        <!-- /.entry-content -->
+    </article>
+</li>

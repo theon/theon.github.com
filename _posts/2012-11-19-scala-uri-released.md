@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: post
 date: 2012-11-19
 title: scala-uri 0.1 Released
 tags: [scala-uri, scala, url, uri, dsl]

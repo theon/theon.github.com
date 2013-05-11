@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: post
 date: 2012-04-28
 title: Remote Controlled Thermostat with Arduino
 tags: [arduino, hack, scala, spring, jetty]

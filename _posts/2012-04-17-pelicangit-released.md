@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: post
 date: 2012-04-17
 title: pelicangit 0.1 released
 tags: [pelican, git, github, pelicangit]

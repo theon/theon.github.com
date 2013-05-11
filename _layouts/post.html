@@ -1,24 +1,27 @@
-----
+---
 layout: base
 ---
 
-<section id="content" class="body">    
+<section id="content" class="body">
 <article>
-        <header> 
-            
-        {% include 'article_infos_basic_read_later.html' %}
-            
-        <h1 class="entry-title"><a href="{{ pagename }}"
-        rel="bookmark" title="Permalink to {{ page.title }}">{{ page.title
-        }}</a></h1> {% include 'twitter.html' %} </header>
+        <header>
+
+        {% include article_infos_basic_read_later.html %}
+
+        <h1 class="entry-title">
+            <a href="{{ page.url }}" rel="bookmark" title="Permalink to {{ page.title }}">
+            {{ page.title }}
+            </a>
+        </h1>
+        </header>
         <div class="entry-content single-post">
-        
+
         {{ page.content }}
         </div><!-- /.entry-content -->
 
-        {% include 'taglist.html' %}
+        {% include taglist.html %}
 
-        {% if DISQUS_SITENAME %}
+        {% if site.disqus_sitename %}
         <div class="comments">
         <h2>Comments !</h2>
             <div id="disqus_thread"></div>
@@ -26,10 +29,10 @@ layout: base
                var disqus_identifier = "{{ page.url }}";
                var disqus_url = 'http://theon.github.com/{{ page.url }}';
                var disqus_title = '{{ page.title }}';
-               
+
                (function() {
                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-               dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+               dsq.src = 'http://{{ site.disqus_sitename }}.disqus.com/embed.js';
                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
               })();
             </script>
@@ -40,19 +43,15 @@ layout: base
 </section>
 
 
-{% if articles_page %}
+
+{% if site.related_posts %}
     <section id="content" class="body">
-        <h1>Recent posts</h1>
+        <h1>Related Posts</h1>
         <hr />
         <ol id="posts-list" class="hfeed">
-            {% for article in articles_page.object_list %}
-                {% include 'recent_article_infos.html' %}
-        
-                {% if loop.last and (articles_page.has_previous() 
-                   or not articles_page.has_previous() and loop.length > 1) %}
-                    {% include 'pagination.html' %}
-                {% endif %}
+            {% for page in site.related_posts %}
+                {% include article_infos.html %}
             {% endfor %}
-        </ol><!-- /#posts-list -->
-    </section><!-- /#content -->
+        </ol>
+    </section>
 {% endif %}
