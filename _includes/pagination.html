@@ -1,11 +1,11 @@
 <p class="paginator">
     {% if paginator.previous_page_path %}
-        <a href="{{ site.url }}/{{ paginator.previous_page_path }}">&laquo;</a>
+        <a href="{{ paginator.previous_page_path }}">&laquo;</a>
     {% endif %}
 
     Page {{ paginator.page }} / {{ paginator.total_pages }}
 
     {% if paginator.next_page_path %}
-        <a href="{{ site.url }}/{{ paginator.next_page_path }}">&raquo;</a>
+        <a href="{{ paginator.next_page_path }}">&raquo;</a>
     {% endif %}
 </p>

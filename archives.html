@@ -2,12 +2,12 @@
 layout: base
 ---
 
-<section id="content" class="body">
+<section class="content" class="body">
 <h1>Archives for {{ site.name }}</h1>
 
 <dl>
 {% for post in site.posts %}
-    <dt>{{ post.date }}</dt>
+    <dt>{{ post.date | date: "%d %b %Y" }}</dt>
     <dd><a href='{{ post.url }}'>{{ post.title }}</a></dd>
 {% endfor %}
 </dl>

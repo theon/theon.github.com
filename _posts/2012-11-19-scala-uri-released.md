@@ -5,6 +5,7 @@ title: scala-uri 0.1 Released
 tags: [scala-uri, scala, url, uri, dsl]
 category: Posts
 author: Ian Forsey
+permalink: /scala-uri-01-released.html
 ---
 
 The other day I was looking for a Java or Scala library to help me parse a URL (with query string) and then build a new URL by changing the host and some of the parameters. I read a [couple](http://stackoverflow.com/questions/6521419/how-do-i-parse-a-x-www-url-encoded-string-into-a-mapstring-string-using-lift) of [posts](http://stackoverflow.com/questions/2809877/how-to-convert-map-to-url-query-string) on stackoverflow, but nothing seemed to fit the bill perfectly. I didn't want to pull in a whole web framework just to do this one simple task, and I was a bit disappointed I couldn't find a nice small Scala DSL for building URL query strings.

@@ -5,6 +5,7 @@ title: Plant Watering with Arduino - Part 2
 tags: [arduino, hack, cube, cubism, nodejs, amazon ec2]
 category: Posts
 author: Ian Forsey
+permalink: /plant-watering-with-arduino-part-2.html
 ---
 
 Tim [commented](http://theon.github.com/plant-watering-with-arduino.html#comment-765207048) on my recent [blog post](http://theon.github.com/plant-watering-with-arduino.html) about my automated plant watering system and asked if I could go into some more detail about the steps I went though to set up the software side of the project. The project used [cube](https://github.com/square/cube) and [cubism](https://github.com/square/cubism) to make live charts of my chilli plant's moisture levels available over the Internet. In this post I will go though a step-by-step guide explaining how I set up the software that powered these charts. I've tried to write the article for readers with no previous experience of server administration or software development, but I have thrown it together faily quickly, so if anything below is unclear, then do post a comment below and I will try to fix it.

@@ -2,26 +2,27 @@
 layout: base
 ---
 
-<section id="content" class="body">
+<section class="content" class="body">
 <article>
-        <header>
+    <header>
 
-        {% include article_infos_basic_read_later.html %}
+    {% include article_infos_basic_read_later.html %}
 
-        <h1 class="entry-title">
-            <a href="{{ page.url }}" rel="bookmark" title="Permalink to {{ page.title }}">
-            {{ page.title }}
-            </a>
-        </h1>
-        </header>
-        <div class="entry-content single-post">
+    <h1 class="entry-title">
+        <a href="{{ page.url }}" rel="bookmark" title="Permalink to {{ page.title }}">
+        {{ page.title }}
+        </a>
+    </h1>
+    </header>
+    <div class="entry-content single-post">
 
-        {{ page.content }}
-        </div><!-- /.entry-content -->
+    {{ content }}
 
-        {% include taglist.html %}
+    </div><!-- /.entry-content -->
 
-        {% if site.disqus_sitename %}
+    {% include taglist.html %}
+
+    {% if site.disqus_sitename %}
         <div class="comments">
         <h2>Comments !</h2>
             <div id="disqus_thread"></div>
@@ -37,21 +38,7 @@ layout: base
               })();
             </script>
         </div>
-        {% endif %}
+    {% endif %}
 
 </article>
 </section>
-
-
-
-{% if site.related_posts %}
-    <section id="content" class="body">
-        <h1>Related Posts</h1>
-        <hr />
-        <ol id="posts-list" class="hfeed">
-            {% for page in site.related_posts %}
-                {% include article_infos.html %}
-            {% endfor %}
-        </ol>
-    </section>
-{% endif %}

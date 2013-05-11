@@ -5,6 +5,7 @@ title: Powering your Blog with Pelican and Git
 tags: [pelicangit, pelican, git, github, amazon ec2, cloud9 ide]
 category: Posts
 author: Ian Forsey
+permalink: /powering-your-blog-with-pelican-and-git.html
 ---
 
 When I decided to start writing this blog, I played around with blogger, wordpress and tumblr, but didn't really get along with any of them - they all seemed a bit too heavyweight for what I wanted. I didn't need much - just the ability to specify some HTML/CSS for the styling and then a quick and easy way to write and publish posts.

@@ -5,6 +5,7 @@ title: Repurposing My Old Android
 tags: [android, gps, hack, cyanogenmod, adwl]
 category: Posts
 author: Ian Forsey
+permalink: /repurposing-my-old-android.html
 ---
 
 <div class="central-section">

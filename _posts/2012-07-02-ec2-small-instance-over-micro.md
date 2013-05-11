@@ -5,6 +5,7 @@ title: You May Want to Drop that EC2 Micro Instance
 tags: [amazon ec2]
 category: Posts
 author: Ian Forsey
+permalink: /you-may-want-to-drop-that-ec2-micro-instance.html
 ---
 
 A few months ago I wrote a [blog post](http://theon.github.com/amazon-ec2-gotchas.html) about gotchas when deploying applications to Amazon EC2. Despite not developing anything for EC2 at the moment, I learnt a new one today. It all started when I received a bunch of emails from Cloudkick (the monitoring system I mentioned in my previous post) stating that the API I had deployed there about a year ago was timing out. So I SSHed in to see what the deal was.

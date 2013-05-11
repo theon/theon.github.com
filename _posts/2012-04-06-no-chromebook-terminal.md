@@ -5,6 +5,7 @@ title: Lost your Chromebook terminal?
 tags: [chromebook, chrome os]
 category: Posts
 author: Ian Forsey
+permalink: /lost-your-chromebook-terminal.html
 ---
 
 I was lucky enough to get given a Chromebook whilst attending Google IO 2011 last year and I must admit - I really like it. At first I thought I would get annoyed at the inability to install local programs (other than Chrome and the shell it comes with) - in reality however, when at home, virtually all my computer usage is on the Chromebook. I guess a browser and shell is all I need.

@@ -5,6 +5,7 @@ title: Remote Controlled Thermostat with Arduino
 tags: [arduino, hack, scala, spring, jetty]
 category: Posts
 author: Ian Forsey
+permalink: /remote-controlled-thermostat-with-arduino.html
 ---
 
 I was out on a walk on a cold day and thought it would be great to be able to remotely turn on the heating in time for when I got back home, which led to this; my first Arduino project. The remote control is achieved over the Internet and the form is web based, so could equally be controlled via any mobile phone with a web browser.

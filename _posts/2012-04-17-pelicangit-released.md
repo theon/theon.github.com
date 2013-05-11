@@ -5,6 +5,7 @@ title: pelicangit 0.1 released
 tags: [pelican, git, github, pelicangit]
 category: Posts
 author: Ian Forsey
+permalink: /pelicangit-01-released.html
 ---
 
 In my [previous post](http://theon.github.com/powering-your-blog-with-pelican-and-git.html) I talked about my motivation for creating [pelicangit](https://github.com/theon/pelicangit). I've spent this last week polishing it up a bit and have now made v0.1 available on PyPI. If you already have pelican and pip installed on your machine, installing pelicangit is now as easy as running `sudo pip install pelicangit`.

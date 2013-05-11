@@ -5,6 +5,7 @@ title: Chrome OS Version 19
 tags: [chromebook, chrome os]
 category: Posts
 author: Ian Forsey
+permalink: /chrome-os-version-19.html
 ---
 
 I've mentioned in my previous posts how much I like my chromebook and last week Google released version 19 of Chrome OS, with some pretty major updates. I'll be honest; I'm not a fan of the changes. 

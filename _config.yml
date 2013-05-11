@@ -4,6 +4,7 @@ author: Ian Forsey
 url: http://theon.github.io/blog/
 permalink: /:title.html
 pygments: true
+paginate: 10
 exclude: [themes]
 disqus_sitename: justsomedev
 google_analytics: UA-30513668-1

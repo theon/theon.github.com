@@ -5,6 +5,7 @@ title: Plant Watering with Arduino
 tags: [arduino, hack, cube, cubism, nodejs, amazon ec2]
 category: Posts
 author: Ian Forsey
+permalink: /plant-watering-with-arduino.html
 ---
 
 # Automating My Chilli Plant
