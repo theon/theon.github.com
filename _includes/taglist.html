@@ -1,0 +1,8 @@
+{% if page.tags %}
+    <p>
+        tags:
+        {% for tag in page.tags %}
+        <a href="{{ SITEURL }}/tag/{{ tag|replace(" ", "-") }}.html">{{ tag }}</a>&nbsp;
+        {% endfor %}
+    </p>
+{% endif %}

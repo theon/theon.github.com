@@ -1,16 +1,16 @@
 
     <li><article class="hentry">    
         <header>
-                <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title }}">{{ article.title }}</a></h1>
+                <h1><a href="{{ SITEURL }}/{{ page.url }}" rel="bookmark" title="Permalink to {{ page.title }}">{{ page.title }}</a></h1>
         </header>
         
         <div class="entry-content">
         {% include 'article_infos_basic.html' %}
-        {{ article.summary }}
+        {{ page.summary }}
 <div class="readmore">
-            <a href="http://www.instapaper.com/hello2?url=http://theon.github.com/{{ article.url }}&title={{ article.title }}">read later</a>
+            <a href="http://www.instapaper.com/hello2?url=http://theon.github.com/{{ page.url }}&title={{ page.title }}">read later</a>
         	&nbsp;|&nbsp;
-            <a href="{{ SITEURL }}/{{ article.url }}">read now</a>
+            <a href="{{ SITEURL }}/{{ page.url }}">read now</a>
         </div>
         {% include 'taglist.html' %}{% include 'comments.html' %}
         </div><!-- /.entry-content -->

@@ -1,8 +1,8 @@
 <footer class="post-info">
-        <h2 class="published" title="{{ article.date.isoformat() }}">
-                {{ article.locale_date }}
+        <h2 class="published" title="{{ page.date.isoformat() }}">
+                {{ page.locale_date }}
         </h2>
 
-{% if PDF_PROCESSOR %}<a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">get the pdf</a>{% endif %}</span>
+{% if PDF_PROCESSOR %}<a href="{{ SITEURL }}/pdf/{{ page.slug }}.pdf">get the pdf</a>{% endif %}</span>
 {% include 'translations.html' %}
 </footer><!-- /.post-info -->

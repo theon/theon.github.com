@@ -1,0 +1,7 @@
+auto: true
+server: true
+permalink: /:title.html
+feed:
+ url: http://theon.github.io
+ name: Just Some Dev
+pygments: true

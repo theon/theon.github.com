@@ -1,0 +1,6 @@
+{% if DISQUS_SITENAME %}
+    <p>
+        There are
+        <a data-disqus-identifier="{{ page.url }}" href="{{ SITEURL }}/{{ page.url }}#disqus_thread">comments</a>.
+    </p>
+{% endif %}
