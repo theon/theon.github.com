@@ -4,7 +4,7 @@ layout: base
 
 {% if paginator.page == 1 %}
     {% for page in paginator.posts limit:1 offset:0 %}
-        <section class="content" class="body">
+        <section class="content body">
             <article>
                 {% include article_infos_basic_read_later.html %}
                 <h1 class="entry-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
@@ -22,7 +22,7 @@ layout: base
     {% assign page_offset = 0 %}
 {% endif %}
 
-<section class="content" class="body">
+<section class="content body">
     <h1>Previous posts</h1>
     <hr />
     <ol id="posts-list" class="hfeed">

@@ -2,7 +2,7 @@
 layout: post
 date: 2012-06-01
 title: Chrome OS Version 19
-tags: [chromebook, chrome os]
+tags: [chromebook, chrome-os]
 category: Posts
 author: Ian Forsey
 permalink: /chrome-os-version-19.html

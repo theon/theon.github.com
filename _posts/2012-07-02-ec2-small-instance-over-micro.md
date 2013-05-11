@@ -2,7 +2,7 @@
 layout: post
 date: 2012-07-02
 title: You May Want to Drop that EC2 Micro Instance
-tags: [amazon ec2]
+tags: [amazon-ec2]
 category: Posts
 author: Ian Forsey
 permalink: /you-may-want-to-drop-that-ec2-micro-instance.html

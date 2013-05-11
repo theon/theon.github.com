@@ -2,7 +2,7 @@
 layout: post
 date: 2012-04-06
 title: Lost your Chromebook terminal?
-tags: [chromebook, chrome os]
+tags: [chromebook, chrome-os]
 category: Posts
 author: Ian Forsey
 permalink: /lost-your-chromebook-terminal.html

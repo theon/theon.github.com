@@ -1,4 +1,8 @@
 <p class="paginator">
+
+    {% if paginator.page == 2 %}
+        <a href="/">&laquo;</a>
+    {% endif %}
     {% if paginator.previous_page_path %}
         <a href="{{ paginator.previous_page_path }}">&laquo;</a>
     {% endif %}

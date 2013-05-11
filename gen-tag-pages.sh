@@ -7,7 +7,7 @@ tags=$(
     done
 )
 
-for tag in tags; do
+for tag in $tags; do
     file=tag/${tag}.html
 
     echo "---" > $file

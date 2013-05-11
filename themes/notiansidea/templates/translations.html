@@ -1,6 +1,0 @@
-{% if page.translations %}
-Translations: 
-    {% for translation in page.translations %}
-        <a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a>
-    {% endfor %}
-{% endif %}
