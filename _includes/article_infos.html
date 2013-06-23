@@ -16,7 +16,7 @@
                 </h2>
             </footer>
 
-            {{ page.content | markdownify | strip_html | truncatewords: 35 }}
+            {{ page.excerpt }}
 
             <div class="readmore">
                 <a href="http://www.instapaper.com/hello2?url={{ site.url }}{{ page.url }}&title={{ page.title }}">read

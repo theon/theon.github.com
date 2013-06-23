@@ -21,3 +21,8 @@ In the process of making these changes, I've learnt that [`TaskKey`s](http://www
 As a result, in `0.0.3` xsbt-coveralls-plugin has been rewritten to use `TaskKey`s rather than a `Command`.
 
 Thanks for all the feedback and bug reports - keep them coming!
+
+### What's next for xsbt-coveralls-plugin?
+
+ * SBT `0.13.0` support on a branch
+ * Ironically, the project's own code coverage has dropped a bit, so look to get that back up.
