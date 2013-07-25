@@ -8,6 +8,8 @@ author: Ian Forsey
 permalink: /repurposing-my-old-android.html
 ---
 
+&nbsp;
+
 <div class="central-section">
     <img src="https://lh4.googleusercontent.com/-P3XGy9cqmac/UIv_ViCW0KI/AAAAAAAACn0/lGmHqOHfL_4/s800/DSC_0046.JPG" />
 </div>
